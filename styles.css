@@ -1079,6 +1079,12 @@
       padding-top: 14px;
       border-top: 1px dashed rgba(26,20,16,0.2);
     }
+    /* --- Buffs section divider --- */
+    .buffs-section {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(26,20,16,0.2);
+    }
     .buffs-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -1119,5 +1125,132 @@
       height: 2px;
       background: repeating-linear-gradient(to right, var(--red) 0, var(--red) 6px, transparent 6px, transparent 12px);
     }
+
+    /* --- Layout Utilities --- */
+    .chapter-header {
+      display: grid; 
+      grid-template-columns: 1fr 240px; 
+      gap: 24px; 
+      margin-bottom: 26px; 
+      align-items: end;
+    }
+    
+    .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 24px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
+
+    @media (max-width: 900px) {
+      .stages-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .stage-line {
+        display: none; /* Hide connector on non-linear grid */
+      }
+      .chapter-header {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+      }
+      
+      /* about.html and index.html side-by-side grids */
+      .portrait-menu-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+      .portrait-sticky {
+        position: relative !important;
+        top: 0 !important;
+        width: 100% !important;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 20px 15px 80px 15px !important;
+      }
+      
+      .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .nav-links a {
+        flex: 1;
+        text-align: center;
+        padding: 8px 4px !important;
+        font-size: 10px !important;
+      }
+
+      .buffs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .debuffs-grid {
+        grid-template-columns: 1fr;
+      }
+      .reward-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .jrpg-card-ink {
+        padding: 16px 20px;
+      }
+      
+      .serif {
+        word-wrap: break-word;
+      }
+      
+      /* index.html testimonial grid */
+      .testimonial-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stages-grid {
+        grid-template-columns: 1fr;
+      }
+      .buffs-grid {
+        grid-template-columns: 1fr;
+      }
+      .reward-grid {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .serif {
+        font-size: 28px !important; /* Cap giant headers */
+      }
+      h1, .h1 { font-size: 32px !important; }
+      
+      .npc-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .nav-links {
+        flex-wrap: wrap;
+      }
+      .nav-links a {
+        min-width: 80px;
+      }
+    }
+
+
 
 
