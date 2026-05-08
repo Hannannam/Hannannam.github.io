@@ -1152,18 +1152,17 @@
 
     @media (max-width: 900px) {
       .stages-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
       }
       .stage-line {
-        display: none; /* Hide connector on non-linear grid */
+        display: none;
       }
       .chapter-header {
         grid-template-columns: 1fr;
         align-items: flex-start;
       }
       
-      /* about.html and index.html side-by-side grids */
       .portrait-menu-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
@@ -1182,32 +1181,40 @@
         padding: 20px 15px 80px 15px !important;
       }
       
+      /* STRICT LINEAR STACK */
+      .stages-grid,
+      .buffs-grid,
+      .debuffs-grid,
+      .reward-grid,
+      .testimonial-grid,
+      .portrait-menu-grid,
+      .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+
       .nav-menu {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
       }
+      .nav-menu .serif span {
+        display: block;
+        margin-top: 4px;
+        font-size: 14px;
+      }
       .nav-links {
         width: 100%;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 8px;
       }
       .nav-links a {
-        flex: 1;
+        width: 100%;
         text-align: center;
-        padding: 8px 4px !important;
-        font-size: 10px !important;
+        padding: 12px !important;
+        font-size: 12px !important;
       }
 
-      .buffs-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .debuffs-grid {
-        grid-template-columns: 1fr;
-      }
-      .reward-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-      }
-      
       .jrpg-card-ink {
         padding: 16px 20px;
       }
@@ -1216,9 +1223,39 @@
         word-wrap: break-word;
       }
       
-      /* index.html testimonial grid */
-      .testimonial-grid {
-        grid-template-columns: 1fr !important;
+      /* index.html dialogue overlay */
+      #intro-overlay {
+        padding-bottom: 20px !important;
+      }
+      #intro-overlay > div {
+        padding: 20px 20px !important;
+        width: 95% !important;
+      }
+      #dialogue-text-content {
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+      }
+      
+      /* menu items on landing page */
+      .jrpg-item, .jrpg-item-special {
+        padding: 14px 16px !important;
+      }
+      .jrpg-item .serif, .jrpg-item-special .serif {
+        font-size: 18px !important;
+      }
+      
+      .end-options {
+        flex-direction: column !important;
+        gap: 12px !important;
+      }
+      .end-options > div {
+        width: 100% !important;
+      }
+      
+      /* Ensure images don't stretch */
+      img, video {
+        max-width: 100% !important;
+        height: auto !important;
       }
     }
 
@@ -1249,7 +1286,14 @@
       .nav-links a {
         min-width: 80px;
       }
+      
+      /* Hide some decorative elements on tiny screens */
+      .jrpg-item span.serif:first-child,
+      .jrpg-item-special span.serif:first-child {
+        display: none;
+      }
     }
+
 
 
 
