@@ -9,9 +9,9 @@
     .contact-form { max-width: 600px; margin: 40px auto; display: flex; flex-direction: column; gap: 24px; }
     .contact-form label { font-family: var(--font-sans); font-weight: 600; color: var(--ink); display: flex; flex-direction: column; gap: 8px; font-size: 15px;}
     .contact-form input, .contact-form textarea { width: 100%; padding: 14px; border: 1px solid var(--line); border-radius: 8px; font-family: var(--font-sans); font-size: 16px; background: var(--white); transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(26, 20, 16, 0.02) inset;}
-    .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(15, 93, 103, 0.1); }
+    .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(154, 51, 36, 0.1); }
     .contact-form textarea { min-height: 180px; resize: vertical; }
-    .contact-form button { background: var(--teal); color: var(--white); font-weight: 600; font-size: 16px; padding: 16px; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(15, 93, 103, 0.2); margin-top: 8px;}
+    .contact-form button { background: var(--red); color: var(--white); font-weight: 600; font-size: 16px; padding: 16px; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(154, 51, 36, 0.2); margin-top: 8px;}
     .contact-form button:hover { background: var(--ink); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(26, 20, 16, 0.2); }
     .contact-form button:disabled { background: var(--muted); cursor: not-allowed; transform: none; box-shadow: none; }
     
@@ -28,7 +28,7 @@
       <!-- Top status bar -->
       <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 16px; border-bottom: 1px solid var(--line); margin-bottom: 40px;">
         <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="width: 32px; height: 32px; background: var(--teal); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
+          <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
             HN
           </div>
           <div>
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div style="display: flex; gap: 10px;">
-          <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--teal); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--teal); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';" onmouseout="this.style.background='var(--teal)'; this.style.borderColor='var(--teal)';">BACK TO MENU</a>
+          <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--red); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--red); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';" onmouseout="this.style.background='var(--red)'; this.style.borderColor='var(--red)';">BACK TO MENU</a>
         </div>
       </div>
     </div>
@@ -62,20 +62,20 @@
         <label>
           Email *
           <input type="email" id="email" name="email" data-fs-field required placeholder="jane@example.com" />
-          <span style="color: #d93025; font-size: 14px; font-weight: normal; margin-top: -4px;" data-fs-error="email"></span>
+          <span style="color: #d93025; font-size: 16px; font-weight: normal; margin-top: -4px;" data-fs-error="email"></span>
         </label>
         
         <label>
           Message *
           <textarea id="message" name="message" data-fs-field required placeholder="Hi Hannah, I would love to connect..."></textarea>
-          <span style="color: #d93025; font-size: 14px; font-weight: normal; margin-top: -4px;" data-fs-error="message"></span>
+          <span style="color: #d93025; font-size: 16px; font-weight: normal; margin-top: -4px;" data-fs-error="message"></span>
         </label>
         
         <button type="submit" data-fs-submit-btn>Send Message</button>
       </form>
 
       <div class="linkedin-card">
-        <h3 class="serif" style="font-size: 28px; margin-bottom: 8px; color: var(--ink);">Or let's connect professionally</h3>
+        <h3 class="serif" style="font-size: 30px; margin-bottom: 8px; color: var(--ink);">Or let's connect professionally</h3>
         <p style="color: var(--muted); margin-bottom: 24px;">I share my latest work and insights on learning experience design.</p>
         <a href="https://www.linkedin.com/in/anh-ngoc-nguyen-4bb18b227/" target="_blank" rel="noreferrer" style="display: inline-flex; align-items: center; gap: 8px; background: #0a66c2; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background 0.2s; box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);">
           Connect on LinkedIn
@@ -93,7 +93,7 @@
       <div class="contact-list">
         <a class="contact-item" href="https://www.linkedin.com/in/anh-ngoc-nguyen-4bb18b227/" target="_blank" rel="noreferrer"><b>LinkedIn</b><span>linkedin.com/in/anh-ngoc-nguyen-4bb18b227/</span></a>
         <a class="contact-item" href="mailto:nguyen.educates@gmail.com"><b>Email</b><span>nguyen.educates@gmail.com</span></a>
-        <a class="contact-item" href="https://github.com" target="_blank" rel="noreferrer"><b>GitHub</b><span>github.com/hannahnguyen-id</span></a>
+
       </div>
     </div>
     <div class="container copyright">© 2026 Hannah (Ngoc) Nguyen · Instructional Design Portfolio</div>

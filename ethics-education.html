@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethics in Education Course | Hannah (Ngoc) Nguyen</title>
+  <meta name="description" content="Case study: Ethics in Education eLearning Module" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Case study specific styles */
+    .case-hero {
+      padding: 100px 0 60px;
+      background: linear-gradient(135deg, var(--red), var(--red-deep));
+      color: white;
+      text-align: center;
+    }
+    .case-hero h1 {
+      margin: 16px 0;
+      color: white;
+      font-size: 52px;
+    }
+    .case-hero .eyebrow {
+      color: #a4e5ee;
+      justify-content: center;
+    }
+    .case-hero .eyebrow::after {
+      background: #a4e5ee;
+    }
+    .case-hero em {
+      color: #a4e5ee;
+      font-weight: 400;
+    }
+    .case-content {
+      padding: 60px 0 100px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .case-content h2 {
+      margin-top: 8px;
+      margin-bottom: 24px;
+      font-size: 38px;
+      line-height: 1.2;
+    }
+    .case-content h3 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      font-size: 26px;
+      color: var(--red);
+    }
+    .case-content p, .case-content ul {
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    
+    /* Highlighting Styles */
+    .case-content em {
+      color: var(--red);
+    }
+    .case-content strong {
+      font-weight: 600;
+      color: var(--red);
+    }
+    .case-content .lead {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--ink);
+      margin-bottom: 32px;
+    }
+    
+    .case-section-kicker {
+      font-size: 15px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 8px;
+      font-weight: 600;
+      margin-top: 80px;
+    }
+    .quote-block {
+      background: rgba(154, 51, 36, 0.05);
+      border-left: 3px solid var(--red);
+      padding: 24px 32px;
+      margin: 16px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .quote-block .quote-num {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--red);
+      margin-bottom: 8px;
+      letter-spacing: 0.1em;
+    }
+    .quote-block p {
+      font-size: 19px;
+      color: var(--ink);
+      margin-bottom: 0;
+    }
+
+    .case-meta {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    .case-meta-item {
+      text-align: left;
+    }
+    .case-meta-item b {
+      display: block;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #a4e5ee;
+      margin-bottom: 4px;
+    }
+    .case-meta-item span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body style="background-color: var(--cream);">
+  <!-- Top status bar -->
+  <div style="padding: 40px 20px 24px 20px; background-color: var(--cream);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 16px; border-bottom: 1px solid var(--line);">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
+            HN
+          </div>
+          <div>
+            <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">- Learning Experience Designer</span></div>
+            <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px;">
+          <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--red); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--red); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';" onmouseout="this.style.background='var(--red)'; this.style.borderColor='var(--red)';">BACK TO MENU</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top" style="padding: 0 20px 100px 20px; background-color: var(--cream);">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <!-- ===== CHAPTER TITLE CARD ===== -->
+    <div style="display: grid; grid-template-columns: 1fr 240px; gap: 24px; margin-bottom: 26px; align-items: end;">
+      <div>
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); margin-bottom: 6px;">◇ CHAPTER 02</div>
+        <div class="serif" style="font-size: 38px; color: var(--ink); line-height: 1.05; letter-spacing: -0.01em;">Ethics course for educators to meet <em style="color: var(--red);">state requirements</em></div>
+      </div>
+      <!-- Project meta card -->
+      <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-family: monospace; font-size: 10px;">
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">DIFFICULTY</div>
+            <div style="color: var(--red); margin-top: 2px;">★★★★☆</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">PARTY SIZE</div>
+            <div style="color: var(--ink); margin-top: 2px;">Solo IDer</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">DURATION</div>
+            <div style="color: var(--ink); margin-top: 2px;">12 weeks</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">STATUS</div>
+            <div style="color: #c45959; margin-top: 2px;">● Cleared</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== MISSION BRIEFING (THE PROBLEM) ===== -->
+    <div style="background: #ffffff; border: 2px solid var(--red); border-radius: 6px; padding: 22px 24px; margin-bottom: 22px; position: relative;">
+      <div style="position: absolute; top: -12px; left: 18px; background: var(--red); color: var(--cream); font-family: monospace; font-size: 11px; letter-spacing: 0.15em; padding: 3px 12px; border-radius: 3px;">▸ MISSION BRIEFING - THE PROBLEM</div>
+
+      <div class="serif" style="font-size: 19px; line-height: 1.55; color: var(--ink); margin-top: 6px; margin-bottom: 14px;">
+        Ethics content with no centralized home.
+      </div>
+      <div class="jrpg-body">
+        Ethics content was scattered across coursework with no centralized home, no consistent delivery, and no documented alignment to PA Department of Education standards. Future teachers were getting an uneven foundation on something that genuinely matters.
+      </div>
+
+      <!-- Enemy debuffs -->
+      <div style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(26,20,16,0.2);">
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); margin-bottom: 10px;">⚠ ACTIVE DEBUFFS ON PARTY</div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+          <div class="debuff-card">
+            <i class="ti ti-school-off" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 01</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">No centralized home for ethics instruction.</div>
+            </div>
+          </div>
+          <div class="debuff-card">
+            <i class="ti ti-language-off" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 02</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">No documented alignment to PA DOE standards.</div>
+            </div>
+          </div>
+          <div class="debuff-card">
+            <i class="ti ti-coin-off" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 03</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">No consistent delivery across the program.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STRATEGY PANEL (THE SOLUTION) ===== -->
+    <div class="jrpg-card">
+      <div class="jrpg-header-row">
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--red);">◆ STRATEGY - THE SOLUTION</div>
+        <div style="font-family: monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em;">CHOSEN APPROACH</div>
+      </div>
+
+      <div class="serif" style="font-size: 26px; line-height: 1.35; color: var(--ink); margin-bottom: 14px;">
+        A self-paced module where learners <em style="color: var(--red);">decide, not just watch.</em>
+      </div>
+      <div class="jrpg-body" style="margin-bottom: 16px;">
+        A scenario-driven eLearning module hosted in Brightspace. Three modules, one mastery test, Vyond-animated videos dropping learners into real classroom dilemmas - and auto-graded everything so it scales without burning out the professor.
+      </div>
+
+      <!-- Buffs gained -->
+      <div class="buffs-section">
+        <div class="jrpg-label-sm" style="margin-bottom: 10px;">✦ BUFFS GAINED</div>
+        <div class="buffs-grid">
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-route" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">3 scaffolded modules</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-coin" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Auto-graded (zero professor grading)</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-target" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Vyond scenario videos</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-certificate" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">80% mastery threshold</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DUNGEON MAP (THE PROCESS) ===== -->
+    <div style="margin-bottom: 26px;">
+      <div class="jrpg-header-row" style="margin-bottom: 4px;">
+        <div class="jrpg-label">◇ DUNGEON MAP - MY PROCESS</div>
+        <div class="jrpg-label-muted">5 STAGES · ALL CLEARED</div>
+      </div>
+      <div class="serif" style="font-size: 26px; color: var(--ink); line-height: 1.2; margin-bottom: 18px;">From stakeholder interviews to a live Brightspace module.</div>
+
+      <!-- Stage path connector -->
+      <div class="stage-connector">
+        <div style="position: relative;">
+          <div class="stage-line"></div>
+
+          <!-- 5 stages -->
+          <div class="stages-grid">
+
+            <!-- Stage 1 -->
+            <div class="stage-col">
+              <div class="stage-node">
+                <span class="serif" style="font-size: 20px; color: var(--cream);">i</span>
+                <div class="stage-check">
+                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px;">STAGE 01</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Analysis</div>
+              <div class="jrpg-label-muted">Stakeholder interviews &amp; doc review</div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="stage-col">
+              <div class="stage-node">
+                <span class="serif" style="font-size: 20px; color: var(--cream);">ii</span>
+                <div class="stage-check">
+                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px;">STAGE 02</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Design</div>
+              <div class="jrpg-label-muted">Scaffold &amp; learning objectives</div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="stage-col">
+              <div class="stage-node">
+                <span class="serif" style="font-size: 16px; color: var(--cream);">iii</span>
+                <div class="stage-check">
+                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px;">STAGE 03</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Development</div>
+              <div class="jrpg-label-muted">Vyond + Storyline + SCORM</div>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="stage-col">
+              <div class="stage-node">
+                <span class="serif" style="font-size: 16px; color: var(--cream);">iv</span>
+                <div class="stage-check">
+                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px;">STAGE 04</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Implementation</div>
+              <div class="jrpg-label-muted">Deployed in Brightspace</div>
+            </div>
+
+            <!-- Stage 5 - BOSS -->
+            <div class="stage-col">
+              <div class="stage-node-boss">
+                <span class="serif" style="font-size: 16px; color: var(--ink); font-weight: 600;">v</span>
+                <div class="stage-check">
+                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px;">⚔ BOSS · STAGE 05</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Evaluation</div>
+              <div class="jrpg-label-muted">Pilot test &amp; revision</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STAGE DETAIL CARDS - All 5 ADDIE Stages ===== -->
+    <div style="display: grid; grid-template-columns: 1fr; gap: 18px; margin-bottom: 26px;">
+
+      <!-- Stage 1 - Analysis -->
+      <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <div class="avatar avatar-sm" style="background: var(--red);">
+            <span class="serif" style="font-size: 16px; color: var(--cream);">i</span>
+          </div>
+          <div>
+            <div class="jrpg-label-sm">STAGE 01 · ANALYSIS</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Three domains, one clear gap.</div>
+          </div>
+        </div>
+        <div class="jrpg-body-sm" style="margin-bottom: 12px;">
+          Analysis was conducted across task, environment, and technology domains through document review of PDE guidelines and existing course materials, and informal interviews with the client.
+        </div>
+        <img src="images/learner analysis.png" alt="Learner analysis infographic" style="width: 100%; border-radius: 8px; margin-bottom: 12px; display: block; border: 2px solid var(--red);">
+        <div class="jrpg-inset">
+          <div style="color: var(--red); font-weight: 600; margin-bottom: 6px;">▸ KEY FINDINGS</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Pennsylvania requires teachers to have ethics competency. However, current ethics content at Commonwealth University is not unified in one place.</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Core competencies: ethical decision-making, professional code of conduct, and inclusive language</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Client preferred self-paced and interactive experiences over passive learning</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ All assessments needed to be self-grading</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Delivery format: online via Brightspace</div>
+        </div>
+        <div class="xp-badge">+50 XP · STAGE CLEARED</div>
+      </div>
+
+      <!-- Stage 2 - Design -->
+      <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <div class="avatar avatar-sm" style="background: var(--red);">
+            <span class="serif" style="font-size: 16px; color: var(--cream);">ii</span>
+          </div>
+          <div>
+            <div class="jrpg-label-sm">STAGE 02 · DESIGN</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Built backward from a single goal.</div>
+          </div>
+        </div>
+        <div class="jrpg-body-sm" style="margin-bottom: 12px;">
+          Async, interactive, ~1 hour. Instructional goal: students apply PA Professional Ethics competencies and the Model Code of Ethics for Educators with 80% accuracy.
+        </div>
+        <img src="images/Module Layout.jpeg" alt="Module layout diagram" style="width: 100%; border-radius: 8px; margin-bottom: 12px; display: block; border: 2px solid var(--red);">
+        <div class="jrpg-inset">
+          <div style="color: var(--red); font-weight: 600; margin-bottom: 6px;">▸ CURRICULUM STRUCTURE</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Module 1 — Foundation Frameworks(PE.1–PE.3)</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Module 2 — 5 MCEE Principles(PE.4–PE.8)</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Module 3 — Disability Competencies</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Content formats: animated videos, interactive scenarios, infographics, and official PDE documents</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Self-graded knowledge checks and mastery test administered in Brightspace with 80% required to pass</div>
+        </div>
+        <div class="xp-badge">+100 XP · STAGE CLEARED</div>
+      </div>
+
+      <!-- Stage 3 - Development -->
+      <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <div class="avatar avatar-sm" style="background: var(--red);">
+            <span class="serif" style="font-size: 14px; color: var(--cream);">iii</span>
+          </div>
+          <div>
+            <div class="jrpg-label-sm">STAGE 03 · DEVELOPMENT</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Strategy into assets.</div>
+          </div>
+        </div>
+        <div class="jrpg-body-sm" style="margin-bottom: 12px;">
+          Each tool was chosen for a reason - Vyond for the scenario videos that make ethical dilemmas feel real, Storyline for the interactions, Brightspace for the delivery.
+        </div>
+        <video controls style="width: 100%; border-radius: 8px; margin-bottom: 12px; display: block; border: 2px solid var(--red);">
+          <source src="images/MCEE Principle III.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <img src="images/infographics.png" alt="Ethical Guidelines Infographics" style="width: 100%; border-radius: 8px; margin-bottom: 12px; display: block; border: 2px solid var(--red);">
+        <div class="jrpg-inset">
+          <div style="color: var(--red); font-weight: 600; margin-bottom: 6px;">▸ BUILD STACK</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Vyond - Animated scenario videos as the primary instructional vehicle</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Canva - Infographics with the PA Model Code of Ethics principles and Pennsylvania's Code of Conduct</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Articulate Storyline - Interactive decision-making scenarios, drag-and-drop activities, and self-reflection prompts</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Assessment: End-of-module quizzes + 10-item final test in Brightspace for auto-graded activities</div>
+        </div>
+        <div class="xp-badge">+150 XP · STAGE CLEARED</div>
+      </div>
+
+      <!-- Stage 4 - Implementation -->
+      <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <div class="avatar avatar-sm" style="background: var(--red);">
+            <span class="serif" style="font-size: 14px; color: var(--cream);">iv</span>
+          </div>
+          <div>
+            <div class="jrpg-label-sm">STAGE 04 · IMPLEMENTATION</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Review, test, deploy.</div>
+          </div>
+        </div>
+        <div class="jrpg-body-sm" style="margin-bottom: 12px;">
+          A structured process of development, review, testing, and deployment — with weekly client check-ins and a full contingency plan in place before go-live.
+        </div>
+        <img src="images/deployment.png" alt="Deployed Module 1 content in Brightspace" style="width: 100%; border-radius: 8px; margin-bottom: 12px; display: block; border: 2px solid var(--red);">
+        <div class="jrpg-inset">
+          <div style="color: var(--red); font-weight: 600; margin-bottom: 6px;">▸ DEPLOYMENT CHECKLIST</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ 1-to-1 evaluations with Dr. Drogan for content accuracy + PDE alignment</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Group testing to catch ambiguities in instructions and questions</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Fully async, self-paced - 24/7 access via university credentials</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Person-first language modeled throughout at 11th-12th grade reading level</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Contingency plan: LMS integration, learner access, assessment tracking, communication failures</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Hand-off: SCORM 1.2 package, raw source files, scripts, storyboards, full project report</div>
+        </div>
+        <div class="xp-badge">+150 XP · STAGE CLEARED</div>
+      </div>
+
+      <!-- Stage 5 - Evaluation (Boss) -->
+      <div style="background: var(--sand); border: 1px solid rgba(154,51,36,0.4); border-radius: 6px; padding: 18px 20px; position: relative;">
+        <div style="position: absolute; top: -10px; right: 14px; background: var(--gold); color: var(--ink); font-family: monospace; font-size: 9px; letter-spacing: 0.15em; padding: 3px 8px; border-radius: 3px;">⚔ BOSS STAGE</div>
+
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <div class="avatar avatar-sm" style="background: var(--gold); border: 2px solid var(--red);">
+            <span class="serif" style="font-size: 12px; color: var(--ink); font-weight: 600;">v</span>
+          </div>
+          <div>
+            <div class="jrpg-label-sm">STAGE 05 · EVALUATION</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Formative + summative, grounded in Kirkpatrick.</div>
+          </div>
+        </div>
+        <div class="jrpg-body-sm" style="margin-bottom: 12px;">
+          Formative evaluation with SMEs and five grad students caught two real issues — both fixed before launch. Summative evaluation uses Kirkpatrick's four-level model.
+        </div>
+        <img src="images/evaluation.png" alt="Kirkpatrick's Level 1 Progress Tracker in Brightspace" style="width: 100%; border-radius: 8px; margin-bottom: 12px; display: block; border: 2px solid var(--red);">
+        <div class="jrpg-inset" style="margin-bottom: 10px;">
+          <div style="color: var(--red); font-weight: 600; margin-bottom: 6px;">▸ FORMATIVE</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ 1-to-1 SME review - ambiguous scenario question rewritten, change sensitive wordings to more flexible ones</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Small group trial (5 grad students) - drag-and-drop instructions clarified, UI improvements</div>
+        </div>
+        <div class="jrpg-inset">
+          <div style="color: var(--red); font-weight: 600; margin-bottom: 6px;">▸ SUMMATIVE - KIRKPATRICK MODEL</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Level 1 (Reaction) - LMS analytics: completion rates, video viewing, time-on-task, quiz performance</div>
+          <div style="color: var(--ink); padding-left: 14px;">↳ Level 2 (Learning) - Cumulative auto-graded final exam across all 3 modules; 80% required to pass + learner survey</div>
+        </div>
+        <div class="xp-badge">+200 XP · BOSS DEFEATED</div>
+      </div>
+
+    </div>
+
+
+
+    <!-- ===== VICTORY SCREEN (THE RESULT) ===== -->
+    <div class="jrpg-card-ink">
+
+      <!-- Decorative starburst -->
+      <div style="position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(200,148,85,0.25) 0%, transparent 65%); pointer-events: none;"></div>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; position: relative;">
+        <div style="width: 36px; height: 36px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <i class="ti ti-trophy" style="font-size: 20px; color: var(--ink);" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--gold);">★ ★ ★ VICTORY ★ ★ ★</div>
+          <div class="serif" style="font-size: 30px; color: var(--cream); line-height: 1.05; margin-top: 2px;">Quest Complete - <em style="color: var(--gold);">The Result</em></div>
+        </div>
+      </div>
+
+      <div class="serif" style="font-size: 16px; line-height: 1.55; color: rgba(245,239,230,0.9); margin-bottom: 18px; max-width: 720px; position: relative;">
+        One cohesive module that future teachers will actually finish. 80% mastery threshold. Fully aligned to PE.1-PE.8 and the MCEE. Sustainable for the department and accessible for learners.
+      </div>
+
+      <!-- Rewards grid -->
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(245,239,230,0.2); border: 1px solid rgba(245,239,230,0.2); border-radius: 4px; overflow: hidden; margin-bottom: 18px; position: relative;">
+        <div class="reward-cell">
+          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
+          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">Brightspace module</div>
+          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">SCORM 1.2, drops into any LMS</div>
+        </div>
+        <div class="reward-cell">
+          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
+          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">3 modules</div>
+          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">Foundations → MCEE → Disability Competencies</div>
+        </div>
+        <div class="reward-cell">
+          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
+          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">Vyond scenarios</div>
+          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">Real classroom dilemmas</div>
+        </div>
+        <div class="reward-cell">
+          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
+          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">PA PDE aligned</div>
+          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">PE.1-PE.8 &amp; MCEE coverage</div>
+        </div>
+      </div>
+
+      <!-- XP bar -->
+      <div style="position: relative; margin-bottom: 18px;">
+        <div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 10px; color: rgba(245,239,230,0.8); margin-bottom: 6px; letter-spacing: 0.1em;">
+          <span>★ TOTAL XP EARNED</span><span style="color: var(--gold);">+1,200 / 1,200</span>
+        </div>
+        <div style="height: 8px; background: rgba(245,239,230,0.15); border-radius: 4px; overflow: hidden;">
+          <div style="width: 100%; height: 100%; background: var(--gold);"></div>
+        </div>
+      </div>
+
+      <!-- End screen options -->
+      <div style="display: flex; gap: 8px; padding-top: 16px; border-top: 1px solid rgba(245,239,230,0.2); position: relative;">
+        <div style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--ink); background: var(--gold); padding: 10px; border-radius: 3px; text-align: center;">▸ NEXT CHAPTER</div>
+        <div style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--cream); border: 1px solid rgba(245,239,230,0.4); padding: 10px; border-radius: 3px; text-align: center;">↻ REPLAY</div>
+        <div style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--cream); border: 1px solid rgba(245,239,230,0.4); padding: 10px; border-radius: 3px; text-align: center;">⌂ MAIN MENU</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="serif">Let’s create learning that makes an impact.</h2>
+        <p>I’m open to instructional design opportunities, eLearning projects, and collaborations.</p>
+      </div>
+      <div class="contact-list">
+        <a class="contact-item" href="https://www.linkedin.com/in/anh-ngoc-nguyen-4bb18b227/" target="_blank" rel="noreferrer"><b>LinkedIn</b><span>linkedin.com/in/anh-ngoc-nguyen-4bb18b227/</span></a>
+        <a class="contact-item" href="mailto:nguyen.educates@gmail.com"><b>Email</b><span>nguyen.educates@gmail.com</span></a>
+
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Hannah (Ngoc) Nguyen · Instructional Design Portfolio</div>
+  </footer>
+</body>
+</html>
