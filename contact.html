@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Hannah Nguyen</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
   <style>
     .contact-form { max-width: 600px; margin: 40px auto; display: flex; flex-direction: column; gap: 24px; }
     .contact-form label { font-family: var(--font-sans); font-weight: 600; color: var(--ink); display: flex; flex-direction: column; gap: 8px; font-size: 15px;}
     .contact-form input, .contact-form textarea { width: 100%; padding: 14px; border: 1px solid var(--line); border-radius: 8px; font-family: var(--font-sans); font-size: 16px; background: var(--white); transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(26, 20, 16, 0.02) inset;}
-    .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(154, 51, 36, 0.1); }
+    .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(165, 63, 43, 0.1); }
     .contact-form textarea { min-height: 180px; resize: vertical; }
-    .contact-form button { background: var(--red); color: var(--white); font-weight: 600; font-size: 16px; padding: 16px; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(154, 51, 36, 0.2); margin-top: 8px;}
+    .contact-form button { background: var(--red); color: var(--white); font-weight: 600; font-size: 16px; padding: 16px; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(165, 63, 43, 0.2); margin-top: 8px;}
     .contact-form button:hover { background: var(--ink); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(26, 20, 16, 0.2); }
     .contact-form button:disabled { background: var(--muted); cursor: not-allowed; transform: none; box-shadow: none; }
     
@@ -23,24 +24,25 @@
   </style>
 </head>
 <body style="background-color: var(--cream);">
-  <main style="padding: 40px 20px 100px 20px; background-color: var(--cream);">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <!-- Top status bar -->
-      <div class="nav-menu">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
-            HN
-          </div>
-          <div>
-            <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">— Learning Experience Designer</span></div>
-            <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
-          </div>
+  <div class="nav-ribbon">
+    <div class="nav-menu">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
+          HN
         </div>
-        <div class="nav-links">
-          <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--red); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--red); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';" onmouseout="this.style.background='var(--red)'; this.style.borderColor='var(--red)';">BACK TO MENU</a>
+        <div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">— Learning Experience Designer</span></div>
+          <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
         </div>
       </div>
+      <div class="nav-links">
+        <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--ink); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--ink); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.borderColor='var(--red)';" onmouseout="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';">BACK TO MENU</a>
+      </div>
     </div>
+  </div>
+
+  <main style="padding: 32px 20px 100px 20px; background-color: var(--cream);">
+
     <div class="container" style="max-width: 800px;">
       <h1 class="serif" style="font-size: 56px; color: var(--ink); margin-bottom: 16px; text-align: center;">Contact Me</h1>
       <p style="text-align: center; color: var(--muted); margin-bottom: 48px; font-size: 20px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5;">I’m open to instructional design opportunities, eLearning projects, and collaborations. Send me a message below!</p>

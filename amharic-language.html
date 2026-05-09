@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Fidel Quest: Learn Amharic | Hannah (Ngoc) Nguyen</title>
+  <meta name="description" content="Case study: Amharic Joy - Gamified Language Learning Platform" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <style>
+    /* Case study specific styles */
+    .case-hero {
+      padding: 100px 0 60px;
+      background: linear-gradient(135deg, var(--red), var(--red-deep));
+      color: white;
+      text-align: center;
+    }
+    .case-hero h1 {
+      margin: 16px 0;
+      color: white;
+      font-size: 52px;
+    }
+    .case-hero .eyebrow {
+      color: #a4e5ee;
+      justify-content: center;
+    }
+    .case-hero .eyebrow::after {
+      background: #a4e5ee;
+    }
+    .case-content {
+      padding: 60px 0 100px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .case-content h2 {
+      margin-top: 8px;
+      margin-bottom: 24px;
+      font-size: clamp(28px, 5vw, 38px);
+      line-height: 1.2;
+    }
+    .case-content h3 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      font-size: clamp(22px, 4vw, 26px);
+      color: var(--red);
+    }
+    .case-content p, .case-content ul {
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .case-content strong {
+      font-weight: 600;
+      color: var(--red);
+    }
+  </style>
+</head>
+<body style="background-color: var(--cream);">
+  <div class="nav-ribbon">
+    <div class="nav-menu">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
+          HN
+        </div>
+        <div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">- Learning Experience Designer</span></div>
+          <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--ink); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--ink); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.borderColor='var(--red)';" onmouseout="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';">BACK TO MENU</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top" style="padding: 32px 20px 100px 20px; background-color: var(--cream);">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <!-- ===== CHAPTER TITLE CARD ===== -->
+    <div class="chapter-header">
+      <div>
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); margin-bottom: 6px;">◇ CHAPTER 03</div>
+        <div class="jrpg-h1" style="margin-bottom: 8px;">Amharic Joy: Filling the <em style="color: var(--red);">Education Void.</em></div>
+      </div>
+      <!-- Project meta card -->
+      <div style="background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-family: monospace; font-size: 10px;">
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">DIFFICULTY</div>
+            <div style="color: var(--red); margin-top: 2px;">★★★★★</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">PARTY SIZE</div>
+            <div style="color: var(--ink); margin-top: 2px;">Solo IDer</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">DURATION</div>
+            <div style="color: var(--ink); margin-top: 2px;">Ongoing</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">STATUS</div>
+            <div style="color: #f45868; margin-top: 2px;">● Live Build</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== MISSION BRIEFING (THE PROBLEM) ===== -->
+    <div style="background: #ffffff; border: 2px solid var(--red); border-radius: 6px; padding: 22px 24px; margin-bottom: 22px; position: relative;">
+      <div style="position: absolute; top: -12px; left: 18px; background: var(--red); color: var(--cream); font-family: monospace; font-size: 11px; letter-spacing: 0.15em; padding: 3px 12px; border-radius: 3px;">▸ MISSION BRIEFING - THE PROBLEM</div>
+
+      <div class="jrpg-p-lg" style="margin-top: 6px; margin-bottom: 14px;">
+        Despite being a major world language, Amharic is nearly <em style="color: var(--red);">invisible</em> on mainstream learning platforms like Duolingo.
+      </div>
+      <div class="jrpg-body">
+        Existing resources are painfully fragmented—one site might list grammar rules, while another shows random vocabulary words. There is rarely a centralized, lesson-based curriculum that guides a learner from zero to fluency. This barrier prevents people from connecting with Amharic culture, making the learning journey feel like a slog rather than a joy.
+      </div>
+
+      <!-- Enemy debuffs -->
+      <div style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(46,53,50,0.2);">
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); margin-bottom: 10px;">⚠ ACTIVE DEBUFFS ON PARTY</div>
+        <div class="debuffs-grid">
+          <div class="debuff-card">
+            <i class="ti ti-layers-subtract" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 01</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Fragmented, non-centralized online resources.</div>
+            </div>
+          </div>
+          <div class="debuff-card">
+            <i class="ti ti-device-mobile-off" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 02</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Absent from major "trustworthy" learning apps.</div>
+            </div>
+          </div>
+          <div class="debuff-card">
+            <i class="ti ti-mood-empty" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 03</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Lack of engaging, fun-focused lesson structures.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STRATEGY PANEL (THE SOLUTION) ===== -->
+    <div class="jrpg-card">
+      <div class="jrpg-header-row">
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--red);">◆ STRATEGY - THE SOLUTION</div>
+        <div style="font-family: monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em;">BACKWARD DESIGN + AI</div>
+      </div>
+
+      <div class="serif" style="font-size: 26px; line-height: 1.35; color: var(--ink); margin-bottom: 14px;">
+        I built <em style="color: var(--red);">Amharic Joy</em> - a centralized hub blending the science of learning with modern AI technology.
+      </div>
+      <div class="jrpg-body" style="margin-bottom: 24px;">
+        Using <strong>Backward Design</strong>, I started with the end goal: fluent communication and cultural joy. I integrated <strong>AI</strong> to rapidly iterate on the UI while applying the <strong>Science of Learning</strong> to craft a UX that sticks. The result is a comprehensive platform that includes a roadmap, cumulative exams, and immersive practice tools.
+      </div>
+
+      <div style="margin-bottom: 32px;">
+        <a href="https://amharicjoy.com/" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-family: monospace; font-size: 13px; font-weight: bold; box-shadow: 0 6px 20px rgba(165,63,43,0.3); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(165,63,43,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(165,63,43,0.3)';">
+          <i class="ti ti-external-link" style="font-size: 18px;"></i> TRY AMHARIC JOY OUT YOURSELF
+        </a>
+      </div>
+
+      <!-- Buffs gained -->
+      <div class="buffs-section">
+        <div class="jrpg-label-sm" style="margin-bottom: 10px;">✦ BUFFS GAINED</div>
+        <div class="buffs-grid">
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-map-2" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Centralized Course Roadmap</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-robot" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">AI-Optimized Interface</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-brain" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Science-Backed UX</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-device-gamepad-2" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Fun-First Pedagogy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== THE DUNGEON MAP (PLATFORM ARCHITECTURE) ===== -->
+    <div style="margin-bottom: 48px;">
+      <div class="jrpg-header-row" style="margin-bottom: 24px;">
+        <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.25em; color: var(--red); font-weight: bold;">◇ THE DUNGEON MAP</div>
+        <div style="font-family: monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.1em;">PLATFORM ARCHITECTURE</div>
+      </div>
+
+      <!-- STAGE I: Dashboard -->
+      <div class="jrpg-card-white" style="margin-bottom: 24px; padding: 24px; border: 1px solid var(--line); border-radius: 8px;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <div style="font-family: monospace; font-size: 14px; color: var(--red); font-weight: bold; border: 1.5px solid var(--red); padding: 4px 8px; border-radius: 4px;">FACILITY I</div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); letter-spacing: 0.02em;">DASHBOARD & MOTIVATION</div>
+        </div>
+        <div style="border-top: 1px dashed var(--line); padding-top: 20px;">
+          <img src="images/amharicjoypage.png" alt="Amharic Joy Dashboard" style="width: 100%; border-radius: 6px; border: 1px solid var(--line); margin-bottom: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <div class="jrpg-body" style="font-size: 15px;">
+            The dashboard mimics a professional learning platform to provide a sense of stability and "trustworthy" design. I implemented <strong>lesson streaks</strong> and <strong>daily word features</strong> to drive daily engagement and support learner motivation through consistent small wins.
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE II: Course Path -->
+      <div class="jrpg-card-white" style="margin-bottom: 24px; padding: 24px; border: 1px solid var(--line); border-radius: 8px;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <div style="font-family: monospace; font-size: 14px; color: var(--red); font-weight: bold; border: 1.5px solid var(--red); padding: 4px 8px; border-radius: 4px;">FACILITY II</div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); letter-spacing: 0.02em;">20-UNIT COURSE PATH</div>
+        </div>
+        <div style="border-top: 1px dashed var(--line); padding-top: 20px;">
+          <img src="images/course path.png" alt="Course Path" style="width: 100%; border-radius: 6px; border: 1px solid var(--line); margin-bottom: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <div class="jrpg-body" style="font-size: 15px;">
+            Based on the <strong>Peace Corps Amharic Training Manual</strong>, I developed a 20-unit path. I designed a clear visual status system: <strong>Black</strong> for unstarted, <strong>Yellow</strong> for in-progress, and <strong>Green</strong> for finished units that are ready for spaced-repetition review.
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE III: Practice Hub -->
+      <div class="jrpg-card-white" style="margin-bottom: 24px; padding: 24px; border: 1px solid var(--line); border-radius: 8px;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <div style="font-family: monospace; font-size: 14px; color: var(--red); font-weight: bold; border: 1.5px solid var(--red); padding: 4px 8px; border-radius: 4px;">FACILITY III</div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); letter-spacing: 0.02em;">THE ULTIMATE PRACTICE HUB</div>
+        </div>
+        <div style="border-top: 1px dashed var(--line); padding-top: 20px;">
+          <img src="images/practice hub.png" alt="Practice Hub Overview" style="width: 100%; border-radius: 6px; border: 1px solid var(--line); margin-bottom: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <div class="jrpg-body" style="font-size: 15px; margin-bottom: 24px;">
+            The Practice Hub is the engine of the platform, offering multi-modal activities to reinforce learning. Each tool is designed to target a specific cognitive skill:
+          </div>
+
+          <!-- Vertical Tool Stack -->
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <!-- Tool 1 -->
+            <div style="background: #fcfcfc; border: 1px solid var(--line); border-radius: 6px; padding: 16px;">
+              <img src="images/amharic typer.png" alt="Amharic Typer" style="width: 100%; border-radius: 4px; border: 1px solid var(--line); margin-bottom: 12px;">
+              <div class="jrpg-label-sm" style="color: var(--red);">ARTIFACT: AMHARIC TYPER</div>
+              <div style="font-family: monospace; font-size: 12px; color: #555; margin-top: 4px;">A rapid-fire game for building phonetic recall and typing speed.</div>
+            </div>
+            <!-- Tool 2 -->
+            <div style="background: #fcfcfc; border: 1px solid var(--line); border-radius: 6px; padding: 16px;">
+              <img src="images/fidel writer.png" alt="Fidel Writer" style="width: 100%; border-radius: 4px; border: 1px solid var(--line); margin-bottom: 12px;">
+              <div class="jrpg-label-sm" style="color: var(--red);">ARTIFACT: FIDEL WRITER</div>
+              <div style="font-family: monospace; font-size: 12px; color: #555; margin-top: 4px;">Precision practice for the Ge'ez script and stroke order.</div>
+            </div>
+            <!-- Tool 3 -->
+            <div style="background: #fcfcfc; border: 1px solid var(--line); border-radius: 6px; padding: 16px;">
+              <img src="images/listening.png" alt="Listening Practice" style="width: 100%; border-radius: 4px; border: 1px solid var(--line); margin-bottom: 12px;">
+              <div class="jrpg-label-sm" style="color: var(--red);">ARTIFACT: LISTENING LAB</div>
+              <div style="font-family: monospace; font-size: 12px; color: #555; margin-top: 4px;">Native speaker immersion via songs, podcasts, and lesson audio.</div>
+            </div>
+            <!-- Tool 4 -->
+            <div style="background: #fcfcfc; border: 1px solid var(--line); border-radius: 6px; padding: 16px;">
+              <img src="images/keyboard.png" alt="Custom Keyboard" style="width: 100%; border-radius: 4px; border: 1px solid var(--line); margin-bottom: 12px;">
+              <div class="jrpg-label-sm" style="color: var(--red);">ARTIFACT: VIRTUAL KEYBOARD</div>
+              <div style="font-family: monospace; font-size: 12px; color: #555; margin-top: 4px;">Zero-install Amharic input method for seamless participation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE IV: Reading & Scenarios -->
+      <div class="jrpg-card-white" style="margin-bottom: 24px; padding: 24px; border: 1px solid var(--line); border-radius: 8px;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <div style="font-family: monospace; font-size: 14px; color: var(--red); font-weight: bold; border: 1.5px solid var(--red); padding: 4px 8px; border-radius: 4px;">FACILITY IV</div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); letter-spacing: 0.02em;">READING & SCENARIO PRACTICE</div>
+        </div>
+        <div style="border-top: 1px dashed var(--line); padding-top: 20px;">
+          <img src="images/reading practice.png" alt="Reading Practice" style="width: 100%; border-radius: 6px; border: 1px solid var(--line); margin-bottom: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <div class="jrpg-body" style="font-size: 15px;">
+            Reading practice uses scenario-based stories with full <strong>listening support</strong>. I integrated a <strong>one-click "Plus" button</strong> so learners can instantly add key vocabulary to their personal flashcard decks for later review.
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE V: Scheduler & Support -->
+      <div class="jrpg-card-white" style="margin-bottom: 24px; padding: 24px; border: 1px solid var(--line); border-radius: 8px;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <div style="font-family: monospace; font-size: 14px; color: var(--red); font-weight: bold; border: 1.5px solid var(--red); padding: 4px 8px; border-radius: 4px;">FACILITY V</div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); letter-spacing: 0.02em;">SCHEDULER & FEEDBACK</div>
+        </div>
+        <div style="border-top: 1px dashed var(--line); padding-top: 20px;">
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="background: #fcfcfc; border: 1px solid var(--line); border-radius: 6px; padding: 16px;">
+              <img src="images/schedule.png" alt="Schedule Tool" style="width: 100%; border-radius: 4px; border: 1px solid var(--line); margin-bottom: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+              <div class="jrpg-label-sm" style="color: var(--red);">SYSTEM: WEEKLY SCHEDULER</div>
+              <div style="font-family: monospace; font-size: 12px; color: #555; margin-top: 4px;">Managing cognitive load through personalized time management.</div>
+            </div>
+            <div style="background: #fcfcfc; border: 1px solid var(--line); border-radius: 6px; padding: 16px;">
+              <img src="images/Help.png" alt="Help Section" style="width: 100%; border-radius: 4px; border: 1px solid var(--line); margin-bottom: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+              <div class="jrpg-label-sm" style="color: var(--red);">SYSTEM: HELP & FEEDBACK</div>
+              <div style="font-family: monospace; font-size: 12px; color: #555; margin-top: 4px;">Continuous improvement loops based on real learner data.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VICTORY SCREEN (THE FEATURE LIST) ===== -->
+    <div class="jrpg-card-ink" style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-left: 8px solid; border-image: linear-gradient(to bottom, var(--red), var(--red-deep)) 1; color: var(--ink); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; position: relative;">
+        <div style="width: 36px; height: 36px; background: #fff; border: 1.5px solid rgba(165,63,43,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165,63,43,0.1);">
+          <i class="ti ti-sparkles" style="font-size: 20px; color: var(--red);" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); font-weight: bold;">★ ★ ★ LEGENDARY LOOT ★ ★ ★</div>
+          <div class="jrpg-h2" style="margin-top: 2px;">The Amharic Joy - <em style="color: #666;">Full Toolkit</em></div>
+        </div>
+      </div>
+
+      <div class="jrpg-p-lg" style="margin-bottom: 18px; max-width: 720px; position: relative;">
+        A high-engagement arsenal of tools designed to move learners from "Fidel confused" to "culture connected."
+      </div>
+
+      <!-- Feature Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; position: relative;">
+        
+        <!-- Feature 1: Core Curriculum -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-book" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Core Curriculum</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Roadmap, quizzes, cumulative exams, and multi-level reading modules.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Immersive Media -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-music" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Immersive Practice</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Listening via podcasts, videos, and popular music. Native audio clips included.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Game Station -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-device-gamepad" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Game Station</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Word typing games, dialogue puzzles, and verb conjugators.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4: Active Output -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-message-2" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Active Output</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Speaking prompts, translation tasks, and writing practice modules.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div class="xp-badge" style="color: var(--white); font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.1); background: var(--red); padding: 4px 12px; border-radius: 4px; font-size: 11px;">+400 XP · BOSS DEFEATED</div>
+        <div class="xp-badge" style="color: var(--muted); font-weight: bold; font-size: 11px;">+400 XP · UPCOMING MISSION</div>
+      </div>
+
+      <!-- XP bar -->
+      <div style="position: relative; margin-bottom: 18px;">
+        <div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 10px; color: var(--red); margin-bottom: 6px; letter-spacing: 0.1em; font-weight: bold;">
+          <span>★ TOTAL XP EARNED</span><span style="color: var(--red);">1,200 / 1,200</span>
+        </div>
+        <div style="height: 4px; background: rgba(165,63,43,0.05); border-radius: 2px; overflow: hidden;">
+          <div style="width: 100%; height: 100%; background: linear-gradient(to right, var(--red), var(--red-deep)); box-shadow: 0 0 10px rgba(165,63,43,0.2);"></div>
+        </div>
+      </div>
+
+      <!-- End screen options -->
+      <div style="display: flex; gap: 8px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.1); position: relative;">
+        <a href="animator-onboarding.html" style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: #ffffff; background: var(--ink); padding: 10px; border-radius: 3px; text-align: center; text-decoration: none; display: block;">▸ NEXT CHAPTER</a>
+        <a href="#" style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--ink); border: 1px solid rgba(0,0,0,0.2); padding: 10px; border-radius: 3px; text-align: center; text-decoration: none; display: block;">↻ REPLAY</a>
+        <a href="index.html" style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--ink); border: 1px solid rgba(0,0,0,0.2); padding: 10px; border-radius: 3px; text-align: center; text-decoration: none; display: block;">⌂ MAIN MENU</a>
+      </div>
+    </div>
+
+  </div>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="serif">Let’s create learning that makes an impact.</h2>
+        <p>I’m open to instructional design opportunities, eLearning projects, and collaborations.</p>
+      </div>
+      <div class="contact-list">
+        <a class="contact-item" href="https://www.linkedin.com/in/anh-ngoc-nguyen-4bb18b227/" target="_blank" rel="noreferrer"><b>LinkedIn</b><span>linkedin.com/in/anh-ngoc-nguyen-4bb18b227/</span></a>
+        <a class="contact-item" href="mailto:nguyen.educates@gmail.com"><b>Email</b><span>nguyen.educates@gmail.com</span></a>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Hannah (Ngoc) Nguyen · Instructional Design Portfolio</div>
+  </footer>
+</body>
+</html>

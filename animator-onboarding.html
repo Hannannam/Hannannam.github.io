@@ -6,6 +6,7 @@
   <title>Onboarding Training for Animator | Hannah (Ngoc) Nguyen</title>
   <meta name="description" content="Case study: Onboarding Training for Animator" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
   <style>
     /* Case study specific styles */
     .case-hero {
@@ -38,13 +39,13 @@
     .case-content h2 {
       margin-top: 8px;
       margin-bottom: 24px;
-      font-size: 38px;
+      font-size: clamp(28px, 5vw, 38px);
       line-height: 1.2;
     }
     .case-content h3 {
       margin-top: 48px;
       margin-bottom: 16px;
-      font-size: 26px;
+      font-size: clamp(22px, 4vw, 26px);
       color: var(--red);
     }
     .case-content p, .case-content ul {
@@ -80,7 +81,7 @@
       margin-top: 80px;
     }
     .quote-block {
-      background: rgba(154, 51, 36, 0.05);
+      background: rgba(165, 63, 43, 0.05);
       border-left: 3px solid var(--red);
       padding: 24px 32px;
       margin: 16px 0;
@@ -125,36 +126,33 @@
   </style>
 </head>
 <body style="background-color: var(--cream);">
-  <!-- Top status bar -->
-  <div style="padding: 40px 20px 24px 20px; background-color: var(--cream);">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <div class="nav-menu">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
-            HN
-          </div>
-          <div>
-            <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">- Learning Experience Designer</span></div>
-            <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
-          </div>
+  <div class="nav-ribbon">
+    <div class="nav-menu">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
+          HN
         </div>
-        <div class="nav-links">
-          <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--red); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--red); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';" onmouseout="this.style.background='var(--red)'; this.style.borderColor='var(--red)';">BACK TO MENU</a>
+        <div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">- Learning Experience Designer</span></div>
+          <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
         </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--ink); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--ink); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.borderColor='var(--red)';" onmouseout="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';">BACK TO MENU</a>
       </div>
     </div>
   </div>
 
-  <main id="top" style="padding: 0 20px 100px 20px; background-color: var(--cream);">
+  <main id="top" style="padding: 32px 20px 100px 20px; background-color: var(--cream);">
   <div style="max-width: 1000px; margin: 0 auto;">
     <!-- ===== CHAPTER TITLE CARD ===== -->
     <div class="chapter-header">
       <div>
         <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); margin-bottom: 6px;">◇ CHAPTER 01</div>
-        <div class="serif" style="font-size: 38px; color: var(--ink); line-height: 1.05; letter-spacing: -0.01em;">The studio with no <em style="color: var(--red);">shared vocabulary.</em></div>
+        <div class="jrpg-h1" style="margin-bottom: 8px;">The studio with no <em style="color: var(--red);">shared vocabulary.</em></div>
       </div>
       <!-- Project meta card -->
-      <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px;">
+      <div style="background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-family: monospace; font-size: 10px;">
           <div>
             <div style="color: var(--muted); letter-spacing: 0.1em;">DIFFICULTY</div>
@@ -170,7 +168,7 @@
           </div>
           <div>
             <div style="color: var(--muted); letter-spacing: 0.1em;">STATUS</div>
-            <div style="color: #97c459; margin-top: 2px;">● Cleared</div>
+            <div style="color: #f45868; margin-top: 2px;">● Testing</div>
           </div>
         </div>
       </div>
@@ -180,15 +178,15 @@
     <div style="background: #ffffff; border: 2px solid var(--red); border-radius: 6px; padding: 22px 24px; margin-bottom: 22px; position: relative;">
       <div style="position: absolute; top: -12px; left: 18px; background: var(--red); color: var(--cream); font-family: monospace; font-size: 11px; letter-spacing: 0.15em; padding: 3px 12px; border-radius: 3px;">▸ MISSION BRIEFING - THE PROBLEM</div>
 
-      <div class="serif" style="font-size: 19px; line-height: 1.55; color: var(--ink); margin-top: 6px; margin-bottom: 14px;">
-        Sino Studio chose to follow the Japanese animation pipeline - but most of its in-house animators had only ever encountered it through word of mouth.
+      <div class="jrpg-p-lg" style="margin-top: 6px; margin-bottom: 14px;">
+        Sino Studio chose to follow the Japanese animation pipeline - but most of its in-house animators had only ever learned about it informally.
       </div>
       <div class="jrpg-body">
-        Vietnam has no formal animation school operating at industry level. The studio's process became an unstable hybrid - Western terminology stitched together with fragments of Japanese workflow, learned informally and inconsistently across the team. The result was a cascade of recurring problems: improper techniques, incorrect line weight, inaccurate colors, and constant rework.
+        Vietnam has no school that teaches industry-level animation. So Sino Studio's process was something they accumulated themselves. Without predecessors to guide them, their workflow became a chaotic blend of Western and Japanese pipelines, learned inconsistently across the team. The resulted in a cascade of problems: improper techniques, incorrect line weight, inaccurate colors, and constant rework. Costing studio time and money.
       </div>
 
       <!-- Enemy debuffs -->
-      <div style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(26,20,16,0.2);">
+      <div style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(46,53,50,0.2);">
         <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); margin-bottom: 10px;">⚠ ACTIVE DEBUFFS ON PARTY</div>
         <div class="debuffs-grid">
           <div class="debuff-card">
@@ -209,7 +207,7 @@
             <i class="ti ti-coin-off" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
             <div>
               <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 03</div>
-              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Zero budget allocated for onboarding materials.</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Zero budget allocated for the onboarding process.</div>
             </div>
           </div>
         </div>
@@ -224,10 +222,10 @@
       </div>
 
       <div class="serif" style="font-size: 26px; line-height: 1.35; color: var(--ink); margin-bottom: 14px;">
-        A self-paced training that <em style="color: var(--red);">looks and feels</em> like the work itself.
+        I designed a fully virtual, interactive onboarding module using a <em style="color: var(--red);">Visual Novel format.</em>
       </div>
       <div class="jrpg-body" style="margin-bottom: 16px;">
-        I designed an interactive visual novel in Ren'Py - branching by role, free to deploy, simulating the actual Clip Studio Paint environment so practicing the workflow is indistinguishable from doing the job.
+        This game-based format provides an intuitive interface for the target demographic of young, tech-savvy animators. The training clarifies specific pipeline roles, standardizes terminology, and requires learners to accurately apply software settings.
       </div>
 
       <!-- Buffs gained -->
@@ -236,25 +234,25 @@
         <div class="buffs-grid">
           <div class="buff-row">
             <div class="buff-icon">
-              <i class="ti ti-route" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+              <i class="ti ti-route" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
             </div>
             <div class="jrpg-mono">3 branching learning paths</div>
           </div>
           <div class="buff-row">
             <div class="buff-icon">
-              <i class="ti ti-coin" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+              <i class="ti ti-coin" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
             </div>
             <div class="jrpg-mono">Zero-cost engine (Ren'Py)</div>
           </div>
           <div class="buff-row">
             <div class="buff-icon">
-              <i class="ti ti-target" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+              <i class="ti ti-target" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
             </div>
             <div class="jrpg-mono">In-engine CSP simulation</div>
           </div>
           <div class="buff-row">
             <div class="buff-icon">
-              <i class="ti ti-certificate" style="font-size: 16px; color: var(--ink);" aria-hidden="true"></i>
+              <i class="ti ti-certificate" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
             </div>
             <div class="jrpg-mono">Cert-gated 80% pass rule</div>
           </div>
@@ -263,9 +261,9 @@
     </div>
 
     <!-- ===== DUNGEON MAP (THE PROCESS) ===== -->
-    <div style="margin-bottom: 26px;">
+    <div class="jrpg-card-white" style="padding: 24px; margin-bottom: 26px; border: 1px solid var(--line); border-radius: 8px;">
       <div class="jrpg-header-row" style="margin-bottom: 4px;">
-        <div class="jrpg-label">◇ DUNGEON MAP - MY PROCESS</div>
+        <div class="jrpg-label" style="color: var(--red);">◇ DUNGEON MAP - MY PROCESS</div>
         <div class="jrpg-label-muted">5 STAGES · ALL CLEARED</div>
       </div>
       <div class="serif" style="font-size: 26px; color: var(--ink); line-height: 1.2; margin-bottom: 18px;">From learner analysis to working build, end to end.</div>
@@ -304,43 +302,34 @@
               <div class="jrpg-label-muted">Action maps &amp; storyboards</div>
             </div>
 
-            <!-- Stage 3 -->
+            <!-- Stage 3 - ACTIVE -->
             <div class="stage-col">
-              <div class="stage-node">
+              <div class="stage-node" style="box-shadow: 0 0 15px var(--red);">
                 <span class="serif" style="font-size: 16px; color: var(--cream);">iii</span>
-                <div class="stage-check">
-                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
-                </div>
               </div>
-              <div class="jrpg-label-sm" style="margin-bottom: 4px;">STAGE 03</div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px; color: var(--red);">ACTIVE STAGE</div>
               <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Development</div>
-              <div class="jrpg-label-muted">Built UI in Ren'Py</div>
+              <div class="jrpg-label-muted">Building UI in Ren'Py</div>
             </div>
 
-            <!-- Stage 4 -->
+            <!-- Stage 4 - PLANNED -->
             <div class="stage-col">
-              <div class="stage-node">
-                <span class="serif" style="font-size: 16px; color: var(--cream);">iv</span>
-                <div class="stage-check">
-                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
-                </div>
+              <div class="stage-node" style="background: var(--ink); border: 1px solid var(--line);">
+                <span class="serif" style="font-size: 16px; color: var(--gold);"><i class="ti ti-calendar-event" style="font-size: 14px;"></i></span>
               </div>
-              <div class="jrpg-label-sm" style="margin-bottom: 4px;">STAGE 04</div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px; color: var(--muted);">PLANNED</div>
               <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Implementation</div>
-              <div class="jrpg-label-muted">Shipped standalone build</div>
+              <div class="jrpg-label-muted">Pilot Rollout</div>
             </div>
 
-            <!-- Stage 5 - BOSS -->
+            <!-- Stage 5 - BOSS PLANNED -->
             <div class="stage-col">
-              <div class="stage-node-boss">
-                <span class="serif" style="font-size: 16px; color: var(--ink); font-weight: 600;">v</span>
-                <div class="stage-check">
-                  <i class="ti ti-check" style="font-size: 10px; color: var(--ink); font-weight: bold;" aria-hidden="true"></i>
-                </div>
+              <div class="stage-node-boss" style="background: var(--ink); border: 2px solid var(--muted); box-shadow: none;">
+                <span class="serif" style="font-size: 16px; color: var(--gold);"><i class="ti ti-calendar-event" style="font-size: 14px;"></i></span>
               </div>
-              <div class="jrpg-label-sm" style="margin-bottom: 4px;">⚔ BOSS · STAGE 05</div>
+              <div class="jrpg-label-sm" style="margin-bottom: 4px; color: var(--muted);">⚔ BOSS · PLANNED</div>
               <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.25; margin-bottom: 4px;">Evaluation</div>
-              <div class="jrpg-label-muted">Simulated CSP assessment</div>
+              <div class="jrpg-label-muted">Summative Review</div>
             </div>
 
           </div>
@@ -352,114 +341,445 @@
     <div style="display: grid; grid-template-columns: 1fr; gap: 18px; margin-bottom: 26px;">
 
       <!-- Stage 1 detail -->
-      <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px;">
+      <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; box-shadow: 0 4px 15px rgba(46, 53, 50, 0.05);">
         <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
           <div class="avatar avatar-sm" style="background: var(--red);">
-            <span class="serif" style="font-size: 16px; color: var(--cream);">i</span>
+            <span class="serif" style="font-size: 16px; color: var(--white);">i</span>
           </div>
           <div>
-            <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">STAGE 01 · ANALYSIS</div>
+            <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red); font-weight: bold;">STAGE 01 · ANALYSIS</div>
             <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Identifying observable behaviors.</div>
           </div>
         </div>
         <div class="jrpg-body-sm" style="margin-bottom: 12px;">
           Before writing a single line of content, I conducted a task analysis to map the training to specific actions animators would perform on the job. Every lesson had to trace back to something observable.
         </div>
-        <div class="jrpg-inset">
-          <div style="color: var(--red); font-weight: 600; margin-bottom: 4px;">▸ GOAL ▸ Standardize output</div>
-          <div style="color: var(--ink); padding-left: 14px;">↳ Identify LO / Genga / Douga roles</div>
-          <div style="color: var(--ink); padding-left: 14px;">↳ Apply CSP environmental settings</div>
-          <div style="color: var(--ink); padding-left: 14px;">↳ Apply mandatory color trace lines</div>
-          <div style="color: var(--ink); padding-left: 14px;">↳ Read &amp; write timesheet annotations</div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 16px;">
+          <!-- Environment Analysis -->
+          <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+            <img src="images\environment analysis sino.png" style="width: 100%; object-fit: cover;" alt="Environment Analysis">
+            <div style="padding: 16px;">
+              <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-bottom: 6px;">▸ ENVIRONMENT ANALYSIS</div>
+              <div class="jrpg-body-sm">Sino Studio is a small virtual studio transitioning into a physical company, but it will not have a training room or dedicated trainers. Because of this, the training program must be fully virtual, reusable, and easy for learners to complete independently at home. 
+                The content needs clear instructions, simple navigation, and a logical flow so users can follow it without guidance.</div>
+            </div>
+          </div>
+
+          <!-- Content Analysis -->
+          <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+            <img src="images\content analysis sino.png" style="width: 100%; object-fit: cover;" alt="Content Analysis">
+            <div style="padding: 16px;">
+              <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-bottom: 6px;">▸ CONTENT ANALYSIS</div>
+              <div class="jrpg-body-sm">I gathered key materials from the studio and reliable online sources. These materials included Japanese pipeline documents, terminology lists, industry techniques, and software requirements. After compiling and translating them, 
+                I met with a subject‑matter expert (an experienced Vietnamese animator) to verify accuracy, clarify terminology, and identify essential concepts for new animators. 
+                I then met with the studio director to decide which processes to include, adjust, or remove so the training content stayed accurate, relevant, and aligned with the studio’s needs.</div>
+            </div>
+          </div>
+
+          <!-- Learner Analysis -->
+          <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+            <img src="images\learner analysis sino.png" style="width: 100%; object-fit: cover;" alt="Learner Analysis">
+            <div style="padding: 16px;">
+              <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-bottom: 6px;">▸ LEARNER ANALYSIS</div>
+              <div class="jrpg-body-sm">The target audience was identified as primarily 16–25-year-old self-taught artists with strong technological skills but low to zero familiarity with the Japanese animation pipeline.</div>
+            </div>
+          </div>
         </div>
-        <div class="xp-badge">+50 XP · STAGE CLEARED</div>
+        <div class="xp-badge" style="color: var(--red); font-weight: bold;">+50 XP · STAGE CLEARED</div>
       </div>
 
-      <!-- Boss stage detail -->
-      <div style="background: var(--sand); border: 1px solid rgba(154,51,36,0.4); border-radius: 6px; padding: 18px 20px; position: relative;">
-        <div style="position: absolute; top: -10px; right: 14px; background: var(--gold); color: var(--ink); font-family: monospace; font-size: 9px; letter-spacing: 0.15em; padding: 3px 8px; border-radius: 3px;">⚔ BOSS STAGE</div>
-
-        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
-          <div class="avatar avatar-sm" style="background: var(--gold); border: 2px solid var(--red);">
-            <span class="serif" style="font-size: 12px; color: var(--ink); font-weight: 600;">v</span>
+      <!-- Stage 2 detail - DESIGN -->
+      <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; box-shadow: 0 4px 15px rgba(46, 53, 50, 0.05);">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+          <div class="avatar avatar-sm" style="background: var(--red);">
+            <span class="serif" style="font-size: 16px; color: var(--white);">ii</span>
           </div>
           <div>
-            <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">STAGE 05 · EVALUATION</div>
-            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">A high-fidelity summative assessment.</div>
+            <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red); font-weight: bold;">STAGE 02 · DESIGN</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Mapping the architecture.</div>
           </div>
         </div>
-        <div class="jrpg-body-sm" style="margin-bottom: 12px;">
-          The final evaluation is a high-fidelity assessment: learners receive a cut folder, set up canvas, apply color trace lines, and submit - all inside a clickable replica of Clip Studio Paint.
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+          <div style="border-left: 2px solid var(--red); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--red); font-weight: bold; margin-bottom: 4px;">▸ LEARNING OBJECTIVES</div>
+            <div class="jrpg-body-sm" style="margin-bottom: 8px;">
+              <strong>Overall goal:</strong> Standardize the studio’s production output to meet both Japanese industry standards and Sino Studio’s specific needs.
+            </div>
+            <details style="margin: 8px 0; cursor: pointer; background: var(--sand); border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px;">
+              <summary style="font-family: monospace; font-size: 11px; font-weight: bold; color: var(--red); list-style: none; display: flex; align-items: center; gap: 8px;">
+                <i class="ti ti-chevron-right" style="font-size: 14px;"></i> By the end of the training, learners will be able to:
+              </summary>
+              <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: var(--ink); line-height: 1.6;">
+                <ul style="margin: 0 0 0 18px; padding: 0; list-style-type: '• '; color: var(--ink);">
+                  <li style="margin-bottom: 4px;">Identify the specific roles of LO, Genga, and Douga within the pipeline and the unique delivery requirements for each.</li>
+                  <li style="margin-bottom: 4px;">Apply all the studio specific environmental settings in Clip Studio Paint to ensure asset portability between animators.</li>
+                  <li style="margin-bottom: 4px;">Apply mandatory color-trace lines (Red/Blue/Green) to Genga layers to facilitate the Shiage (Painting) process.</li>
+                  <li>Read and write annotations on the timesheet and animation frames.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <!-- Structure -->
+          <div style="border-left: 2px solid var(--red); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--red); font-weight: bold; margin-bottom: 4px;">▸ CONTENT STRUCTURE</div>
+            <div class="jrpg-body-sm">In Sino Studio, each animator is in charge of 1 to 2 animation processes (Layout, Genga, Douga, Shiage). 
+              This training is designed so that learners can choose the learning path and lessons that are most relevant to their work to speed up the onboarding process.</div>
+            <img src="images\Learning paths.png" style="width: 100%; object-fit: cover;" alt="Learning path">
+            
+            <details style="margin: 12px 0; cursor: pointer; background: var(--sand); border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px;">
+              <summary style="font-family: monospace; font-size: 11px; font-weight: bold; color: var(--red); list-style: none; display: flex; align-items: center; gap: 8px;">
+                <i class="ti ti-chevron-right" style="font-size: 14px;"></i> LEARNING PATHs DETAILS
+              </summary>
+              <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: var(--ink); line-height: 1.6;">
+                <div style="margin-bottom: 8px;"><strong>1) Introduction to Japanese Animation Pipeline</strong></div>
+                <div style="padding-left: 14px; margin-bottom: 12px; color: #555;">
+                  • Lesson 1: General Anime Production Pipeline<br>
+                  • Lesson 2: Detailed Breakdown of the Layout Stage<br>
+                  • Lesson 3: Detailed Breakdown of the Genga Stage<br>
+                  • Lesson 4: Detailed Breakdown of the Douga Stage<br>
+                  • Lesson 5: Detailed Breakdown of the Shiage Stage
+                </div>
+
+                <div style="margin-bottom: 8px;"><strong>2) Introduction to Sino Studio Animation Pipeline</strong></div>
+                <div style="padding-left: 14px; margin-bottom: 12px; color: #555;">
+                  • Lesson 1: General Sino Studio Anime Production Pipeline<br>
+                  • Lesson 2: Mandatory Technical Standards<br>
+                  • Lesson 3: Delivery Protocols, and Storage Management
+                </div>
+
+                <div style="margin-bottom: 8px;"><strong>3) Review by Topics (focus only on main points)</strong></div>
+                <div style="padding-left: 14px; color: #555;">
+                  • Layout / Genga / Douga / Shiage<br>
+                  • Sino Studio Work (Pipeline, Technical Standards, Storage Management)
+                </div>
+              </div>
+            </details>
+
+            <div class="jrpg-body-sm">Complete beginners or animators new to the Japanese industry will start with Option 1 to learn the basics of Japanese animation pipeline, then they will move to Option 2 to learn Sino Studio’s workflow. 
+              Experienced animators who only need the studio‑specific pipeline can go directly to Option 2. All animators must complete Option 2 to receive a certificate before starting work. Option 3 is for current animators who only need to review specific topics or requirements.</div>
+            
+            <div style="margin-top: 16px; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+              <img src="images/choose path.png" style="width: 100%; object-fit: cover;" alt="Choosing learning path">
+              <div style="padding: 10px; background: var(--sand); border-top: 1px solid var(--line); font-family: monospace; font-size: 10px; color: var(--muted); text-align: center; line-height: 1.4;">
+                Choosing learning path in real training using Ren’py as the Visual novel engine.
+              </div>
+            </div>
+          </div>
+
+          <!-- Strategy -->
+          <div style="border-left: 2px solid var(--red); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--red); font-weight: bold; margin-bottom: 4px;">▸ ASSESSMENT STRATEGY</div>
+            <div class="jrpg-body-sm" style="margin-bottom: 8px;">Assessments were designed to include formative questions with immediate feedback after each key point, followed by a final workflow simulation at the end of the module.</div>
+            
+            <details style="margin-top: 10px; cursor: pointer; background: var(--sand); border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px;">
+              <summary style="font-family: monospace; font-size: 11px; font-weight: bold; color: var(--red); list-style: none; display: flex; align-items: center; gap: 8px;">
+                <i class="ti ti-chevron-right" style="font-size: 14px;"></i> VIEW ASSESSMENT DETAILS
+              </summary>
+              <div style="padding: 0 12px 12px 12px; font-family: monospace; font-size: 10px; color: #555; line-height: 1.5;">
+                <div style="font-weight: bold; color: var(--ink); margin-top: 8px; margin-bottom: 4px;">Formative checks in each section</div>
+                The trainer asks a knowledge or scenario question after each key point. Learners receive immediate feedback and must reselect until they choose the correct answer.
+
+                <div style="font-weight: bold; color: var(--ink); margin-top: 12px; margin-bottom: 4px;">Final workflow simulation</div>
+                Learners complete a task that mimics the real Clip Studio Paint work environment, from receiving a cut folder to submitting the final product.
+                <ul style="margin: 4px 0; padding-left: 14px; list-style-type: '▸ ';">
+                  <li>First run: guided practice with trainer prompts and corrective feedback.</li>
+                  <li>Second run: independent completion. Learners must score above 80% to pass.</li>
+                  <li>If they fail, they can redo the guided run or retry the independent run.</li>
+                  <li>Successful learners receive a completion certificate.</li>
+                </ul>
+
+                <div style="font-weight: bold; color: var(--ink); margin-top: 12px; margin-bottom: 4px;">Pre- and post-surveys</div>
+                Used only with beta testers to measure perceived learning.
+
+                <div style="font-weight: bold; color: var(--ink); margin-top: 12px; margin-bottom: 4px;">Optional interviews</div>
+                Gather deeper insights from beta testers about confusing sections or unclear terminology.
+
+                <div style="margin-top: 12px; border-top: 1px solid var(--line); padding-top: 8px; font-style: italic; font-size: 9px;">
+                  These assessments help identify what needs refinement before full implementation.
+                </div>
+              </div>
+            </details>
+          </div>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-          <div style="background: var(--cream); border: 1px solid var(--line); border-radius: 4px; padding: 8px; font-family: monospace; font-size: 10px; color: var(--ink);"><span style="color: var(--red);">▸</span> Trilingual dictionary</div>
-          <div style="background: var(--cream); border: 1px solid var(--line); border-radius: 4px; padding: 8px; font-family: monospace; font-size: 10px; color: var(--ink);"><span style="color: var(--red);">▸</span> Save / Load system</div>
-          <div style="background: var(--cream); border: 1px solid var(--line); border-radius: 4px; padding: 8px; font-family: monospace; font-size: 10px; color: var(--ink);"><span style="color: var(--red);">▸</span> BGM &amp; SFX controls</div>
-          <div style="background: var(--cream); border: 1px solid var(--line); border-radius: 4px; padding: 8px; font-family: monospace; font-size: 10px; color: var(--ink);"><span style="color: var(--red);">▸</span> 80% pass certificate</div>
+
+        <div class="xp-badge" style="color: var(--red); font-weight: bold; margin-top: 16px;">+50 XP · STAGE CLEARED</div>
+      </div>
+
+      <!-- Stage 3 detail - DEVELOPMENT (ACTIVE) -->
+      <div style="background: var(--white); border: 2px solid var(--red); border-radius: 8px; padding: 18px 20px; position: relative; box-shadow: 0 4px 20px rgba(165, 63, 43, 0.1);">
+        <div style="position: absolute; top: -10px; right: 14px; background: var(--red); color: var(--white); font-family: monospace; font-size: 9px; letter-spacing: 0.15em; padding: 3px 8px; border-radius: 3px; font-weight: bold;">⚔ NOW BUILDING</div>
+
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+          <div class="avatar avatar-sm" style="background: var(--red); box-shadow: 0 0 10px var(--red);">
+            <span class="serif" style="font-size: 16px; color: var(--white);">iii</span>
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red); font-weight: bold;">STAGE 03 · DEVELOPMENT</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Coding the environment.</div>
+          </div>
         </div>
-        <div class="xp-badge">+200 XP · BOSS DEFEATED</div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+          <!-- Tools -->
+          <div style="border-left: 2px solid var(--red); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--red); font-weight: bold; margin-bottom: 4px;">▸ AUTHORING TOOLS</div>
+            <div class="jrpg-body-sm">The training was built using Ren'Py, a free visual novel engine that accommodates zero-budget constraints while supporting custom coding for a simulated work environment.</div>
+          </div>
+
+          <!-- Multimedia & Interactivity -->
+          <div style="border-left: 2px solid var(--red); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--red); font-weight: bold; margin-bottom: 4px;">▸ MULTIMEDIA & INTERACTIVE CONTENT</div>
+            <div class="jrpg-body-sm" style="margin-bottom: 12px;">The training is built as a visual novel with the following integrated components:</div>
+            
+            <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+              <!-- Visual Elements -->
+              <div>
+                <div style="font-family: monospace; font-size: 9px; font-weight: bold; color: var(--ink); margin-bottom: 6px; text-decoration: underline;">VISUAL ELEMENTS</div>
+                <ul style="margin: 0; padding-left: 14px; font-family: monospace; font-size: 10px; color: #555; list-style-type: '▸ ';">
+                  <li style="margin-bottom: 4px;">Trainer avatar with multiple poses and emotions.</li>
+                  <li style="margin-bottom: 4px;">Step-by-step visualizations of processes.</li>
+                  <li style="margin-bottom: 4px;">Flipbook viewer for GIF-like animation previews.</li>
+                </ul>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 12px; margin-bottom: 20px;">
+                  <div>
+                    <img src="images/sino.png" style="width: 100%; border-radius: 4px; border: 1px solid var(--line);" alt="Multiple poses trainer">
+                    <div style="font-family: monospace; font-size: 8px; color: var(--muted); margin-top: 4px; text-align: center; line-height: 1.2;">Different hand-drawn trainer (director avatar) poses and emotions</div>
+                  </div>
+                  <div>
+                    <img src="images/flipbook.png" style="width: 100%; border-radius: 4px; border: 1px solid var(--line);" alt="Flipbook">
+                    <div style="font-family: monospace; font-size: 8px; color: var(--muted); margin-top: 4px; text-align: center; line-height: 1.2;">Flipbook component that functions like both a GIF and a series of pictures</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Elements -->
+              <div>
+                <div style="font-family: monospace; font-size: 9px; font-weight: bold; color: var(--ink); margin-bottom: 6px; text-decoration: underline;">INTERACTIVE & GAME FUNCTIONS</div>
+                <ul style="margin: 0; padding-left: 14px; font-family: monospace; font-size: 10px; color: #555; list-style-type: '▸ ';">
+                  <li style="margin-bottom: 4px;">Choice boxes for learner-trainer interaction.</li>
+                  <li style="margin-bottom: 4px;">Game functions: save, load, back, skip (local storage).</li>
+                  <li style="margin-bottom: 4px;">Interactive simulations of the CSP software.</li>
+                </ul>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 12px; margin-bottom: 20px;">
+                  <div>
+                    <img src="images/choiceboxes.png" style="width: 100%; border-radius: 4px; border: 1px solid var(--line);" alt="Choice Boxes">
+                    <div style="font-family: monospace; font-size: 8px; color: var(--muted); margin-top: 4px; text-align: center; line-height: 1.2;">Choice boxes to simulate a conversation between the trainer and the learner</div>
+                  </div>
+                  <div>
+                    <img src="images/game function.png" style="width: 100%; border-radius: 4px; border: 1px solid var(--line);" alt="Game Functions">
+                    <div style="font-family: monospace; font-size: 8px; color: var(--muted); margin-top: 4px; text-align: center; line-height: 1.2;">Game function components</div>
+                  </div>
+                </div>
+                <div style="margin-top: 12px;">
+                  <img src="images/cspsimulation.png" style="width: 100%; border-radius: 4px; border: 1px solid var(--line);" alt="CSP Simulation">
+                  <div style="font-family: monospace; font-size: 8px; color: var(--muted); margin-top: 4px; text-align: center; line-height: 1.2;">Simulation of the Clip Studio Paint work environment using series of pictures and clickable button</div>
+                </div>
+              </div>
+
+              <!-- Support & Design -->
+              <div>
+                <div style="font-family: monospace; font-size: 9px; font-weight: bold; color: var(--ink); margin-bottom: 6px; text-decoration: underline;">SUPPORT & ACCESSIBILITY</div>
+                <ul style="margin: 0; padding-left: 14px; font-family: monospace; font-size: 10px; color: #555; list-style-type: '▸ ';">
+                  <li style="margin-bottom: 4px;">Built-in dictionary of Japanese terms (EN/VN).</li>
+                  <li style="margin-bottom: 4px;">Contrast-checked 4-color palette (Coolors).</li>
+                  <li style="margin-bottom: 4px;">WAVE tool audit for accessibility compliance.</li>
+                </ul>
+                <div style="margin-top: 8px;">
+                  <img src="images/dictionary.png" style="width: 100%; border-radius: 4px; border: 1px solid var(--line);" alt="Dictionary">
+                  <div style="font-family: monospace; font-size: 8px; color: var(--muted); margin-top: 4px; text-align: center; line-height: 1.2;">Dictionary with Japanese terms, equivalent English term, and meaning in Vietnamese</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="xp-badge" style="color: var(--red); font-weight: bold; margin-top: 16px;">+100 XP · MISSION IN PROGRESS</div>
+      </div>
+
+      <!-- Stage 4 detail - IMPLEMENTATION (PLANNED) -->
+      <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+          <div class="avatar avatar-sm" style="background: var(--muted);">
+            <i class="ti ti-calendar-event" style="font-size: 14px; color: var(--white);"></i>
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--muted); font-weight: bold;">STAGE 04 · IMPLEMENTATION</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">The rollout strategy.</div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+          <div style="border-left: 2px solid var(--ink); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--ink); font-weight: bold; margin-bottom: 4px;">▸ HOSTING</div>
+            <div class="jrpg-body-sm">The program is designed to be lightweight in memory usage so it can eventually be hosted directly on the studio’s main website.</div>
+          </div>
+          <div style="border-left: 2px solid var(--muted); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--muted); font-weight: bold; margin-bottom: 4px;">▸ ACCESSIBILITY</div>
+            <div class="jrpg-body-sm">Prior to full deployment, the WAVE Web Accessibility Evaluation Tool will be used to assess the training for accessibility compliance.</div>
+          </div>
+        </div>
+
+        <div class="xp-badge" style="color: var(--muted); font-weight: bold; margin-top: 16px;">+50 XP · UPCOMING MISSION</div>
+      </div>
+
+      <!-- Boss stage detail - EVALUATION (PLANNED) -->
+      <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; position: relative; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+        <div style="position: absolute; top: -10px; right: 14px; background: var(--muted); color: var(--white); font-family: monospace; font-size: 9px; letter-spacing: 0.15em; padding: 3px 8px; border-radius: 3px; font-weight: bold;">▸ UPCOMING PHASE</div>
+
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <div class="avatar avatar-sm" style="background: var(--muted);">
+            <i class="ti ti-calendar-event" style="font-size: 14px; color: var(--white);"></i>
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--muted); font-weight: bold;">STAGE 05 · EVALUATION</div>
+            <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Measuring the impact.</div>
+          </div>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+          <div style="border-left: 2px solid var(--red); padding-left: 14px;">
+            <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--red); font-weight: bold; margin-bottom: 4px;">▸ EVALUATION PLAN</div>
+            <div class="jrpg-body-sm" style="margin-bottom: 8px;">A two-tiered evaluation strategy focusing on beta-tester reaction and long-term workplace results.</div>
+            
+            <details style="margin-top: 10px; cursor: pointer; background: var(--sand); border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px;">
+              <summary style="font-family: monospace; font-size: 11px; font-weight: bold; color: var(--red); list-style: none; display: flex; align-items: center; gap: 8px;">
+                <i class="ti ti-chevron-right" style="font-size: 14px;"></i> VIEW EVALUATION DETAILS
+              </summary>
+              <div style="padding: 0 12px 12px 12px; font-family: monospace; font-size: 10px; color: #555; line-height: 1.5;">
+                <div style="font-weight: bold; color: var(--ink); margin-top: 8px; margin-bottom: 4px;">Level 1 – Reaction (Beta Testing Phase)</div>
+                I will recruit beta testers from diverse backgrounds within the target audience to collect data on:
+                <ul style="margin: 4px 0; padding-left: 14px; list-style-type: '▸ ';">
+                  <li>Overall satisfaction with the training format.</li>
+                  <li>Technical terminology that remains unclear.</li>
+                  <li>Simulation completion rate on the first attempt.</li>
+                  <li>Sections identified as difficult or confusing.</li>
+                </ul>
+                Interviews will supplement survey data to identify specific areas needing improvement.
+
+                <div style="font-weight: bold; color: var(--ink); margin-top: 12px; margin-bottom: 4px;">Level 4 – Results (Post Implementation)</div>
+                After publication, workplace performance data will be tracked to analyze impact:
+                <ul style="margin: 4px 0; padding-left: 14px; list-style-type: '▸ ';">
+                  <li>Compare production mistakes before vs. 3 months after training.</li>
+                  <li>Survey editors and composers on workload improvements.</li>
+                  <li>Analyze reductions in rework and overall efficiency gains.</li>
+                </ul>
+                <div style="margin-top: 8px; padding: 8px; background: rgba(255,255,255,0.5); border-radius: 4px; font-style: italic; font-size: 9px;">
+                  If effective, this data will justify additional studio workflow projects. If not, it will guide iterative revisions.
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+          <div class="xp-badge" style="color: var(--white); font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.1); background: var(--red); padding: 4px 12px; border-radius: 4px; font-size: 11px;">+400 XP · BOSS DEFEATED</div>
+          <div class="xp-badge" style="color: var(--muted); font-weight: bold; font-size: 11px;">+400 XP · UPCOMING MISSION</div>
+        </div>
       </div>
     </div>
 
     <!-- ===== VICTORY SCREEN (THE RESULT) ===== -->
-    <div class="jrpg-card-ink">
+    <div class="jrpg-card-ink" style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-left: 8px solid; border-image: linear-gradient(to bottom, var(--red), var(--red-deep)) 1; color: var(--ink); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
 
       <!-- Decorative starburst -->
-      <div style="position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(200,148,85,0.25) 0%, transparent 65%); pointer-events: none;"></div>
+      <div style="position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(165,63,43,0.08) 0%, transparent 65%); pointer-events: none;"></div>
 
       <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; position: relative;">
-        <div style="width: 36px; height: 36px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <i class="ti ti-trophy" style="font-size: 20px; color: var(--ink);" aria-hidden="true"></i>
+        <div style="width: 36px; height: 36px; background: #fff; border: 1.5px solid rgba(165,63,43,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165,63,43,0.1);">
+          <i class="ti ti-trophy" style="font-size: 20px; color: var(--red);" aria-hidden="true"></i>
         </div>
         <div>
-          <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--gold);">★ ★ ★ VICTORY ★ ★ ★</div>
-          <div class="serif" style="font-size: 30px; color: var(--cream); line-height: 1.05; margin-top: 2px;">Quest Complete - <em style="color: var(--gold);">The Result</em></div>
+          <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); font-weight: bold;">★ ★ ★ ROADMAP ★ ★ ★</div>
+          <div class="jrpg-h2" style="margin-top: 2px;">Planned Outcomes - <em style="color: #666;">The Vision</em></div>
         </div>
       </div>
 
-      <div class="serif" style="font-size: 16px; line-height: 1.55; color: rgba(245,239,230,0.9); margin-bottom: 18px; max-width: 720px; position: relative;">
+      <div class="jrpg-p-lg" style="margin-bottom: 18px; max-width: 720px; position: relative;">
         A reusable, self-paced onboarding system that any new hire at Sino Studio can complete independently - built on a free engine, with a built-in certificate gate before they touch live production.
       </div>
 
-      <!-- Rewards grid -->
-      <div class="reward-grid" style="background: rgba(245,239,230,0.2); border: 1px solid rgba(245,239,230,0.2); border-radius: 4px; overflow: hidden; margin-bottom: 18px; position: relative;">
-        <div class="reward-cell">
-          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
-          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">Ren'Py build</div>
-          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">Free engine, ships standalone</div>
+      <!-- Rewards Grid Redesign: Legendary Loot Gallery -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; position: relative;">
+        
+        <!-- Reward 01: Ren'Py -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-brand-python" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div style="font-family: monospace; font-size: 8px; color: var(--red); letter-spacing: 0.1em; font-weight: bold; margin-bottom: 4px;">★ LEGENDARY ITEM</div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Ren'Py Build</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Free engine, ships standalone with no hosting costs.</div>
+            </div>
+          </div>
         </div>
-        <div class="reward-cell">
-          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
-          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">3 paths</div>
-          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">Role-based learner choice</div>
+
+        <!-- Reward 02: 3 Paths -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-git-branch" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div style="font-family: monospace; font-size: 8px; color: var(--red); letter-spacing: 0.1em; font-weight: bold; margin-bottom: 4px;">★ LEGENDARY ITEM</div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">3 Learning Paths</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Customized content paths for beginners and experts.</div>
+            </div>
+          </div>
         </div>
-        <div class="reward-cell">
-          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
-          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">CSP simulation</div>
-          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">Graded summative assessment</div>
+
+        <!-- Reward 03: CSP Sim -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-device-laptop" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div style="font-family: monospace; font-size: 8px; color: var(--red); letter-spacing: 0.1em; font-weight: bold; margin-bottom: 4px;">★ LEGENDARY ITEM</div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">CSP Simulation</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Built-in graded summative assessment environment.</div>
+            </div>
+          </div>
         </div>
-        <div class="reward-cell">
-          <div class="jrpg-label-gold" style="margin-bottom: 6px;">★ REWARD</div>
-          <div class="serif" style="font-size: 16px; color: var(--cream); line-height: 1.2;">JP/EN/VN dict.</div>
-          <div style="font-family: monospace; font-size: 9px; color: rgba(245,239,230,0.7); margin-top: 4px; line-height: 1.4;">Trilingual terminology</div>
+
+        <!-- Reward 04: Dictionary -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-vocabulary" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div style="font-family: monospace; font-size: 8px; color: var(--red); letter-spacing: 0.1em; font-weight: bold; margin-bottom: 4px;">★ LEGENDARY ITEM</div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">JP/EN/VN Terms</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Integrated dictionary for cross-language production.</div>
+            </div>
+          </div>
         </div>
+
       </div>
 
       <!-- XP bar -->
       <div style="position: relative; margin-bottom: 18px;">
-        <div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 10px; color: rgba(245,239,230,0.8); margin-bottom: 6px; letter-spacing: 0.1em;">
-          <span>★ TOTAL XP EARNED</span><span style="color: var(--gold);">+1,200 / 1,200</span>
+        <div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 10px; color: var(--red); margin-bottom: 6px; letter-spacing: 0.1em; font-weight: bold;">
+          <span>★ TOTAL XP EARNED</span><span style="color: var(--red);">400 / 1,200</span>
         </div>
-        <div style="height: 8px; background: rgba(245,239,230,0.15); border-radius: 4px; overflow: hidden;">
-          <div style="width: 100%; height: 100%; background: var(--gold);"></div>
+        <div style="height: 4px; background: rgba(165,63,43,0.05); border-radius: 2px; overflow: hidden;">
+          <div style="width: 33.3%; height: 100%; background: linear-gradient(to right, var(--red), var(--red-deep)); box-shadow: 0 0 10px rgba(165,63,43,0.2);"></div>
         </div>
       </div>
 
       <!-- End screen options -->
-      <div style="display: flex; gap: 8px; padding-top: 16px; border-top: 1px solid rgba(245,239,230,0.2); position: relative;">
-        <div style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--ink); background: var(--gold); padding: 10px; border-radius: 3px; text-align: center;">▸ NEXT CHAPTER</div>
-        <div style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--cream); border: 1px solid rgba(245,239,230,0.4); padding: 10px; border-radius: 3px; text-align: center;">↻ REPLAY</div>
-        <div style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--cream); border: 1px solid rgba(245,239,230,0.4); padding: 10px; border-radius: 3px; text-align: center;">⌂ MAIN MENU</div>
+      <div style="display: flex; gap: 8px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.1); position: relative;">
+        <a href="ethics-education.html" style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: #ffffff; background: var(--ink); padding: 10px; border-radius: 3px; text-align: center; text-decoration: none; display: block;">▸ NEXT CHAPTER</a>
+        <a href="#" style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--ink); border: 1px solid rgba(0,0,0,0.2); padding: 10px; border-radius: 3px; text-align: center; text-decoration: none; display: block;">↻ REPLAY</a>
+        <a href="index.html" style="flex: 1; font-family: monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--ink); border: 1px solid rgba(0,0,0,0.2); padding: 10px; border-radius: 3px; text-align: center; text-decoration: none; display: block;">⌂ MAIN MENU</a>
       </div>
     </div>
 

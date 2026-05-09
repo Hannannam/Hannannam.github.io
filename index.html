@@ -6,32 +6,35 @@
   <title>Hannah (Ngoc) Nguyen | Instructional Design Portfolio</title>
   <meta name="description" content="Instructional design portfolio for Hannah (Ngoc) Nguyen featuring eLearning, scenario-based training, and learner-centered design projects." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 <body>
 
-  <main id="top" style="padding: 40px 20px; background-color: var(--cream);">
+  <div class="nav-ribbon">
+    <div class="nav-menu">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
+          HN
+        </div>
+        <div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">- Learning Experience Designer</span></div>
+          <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="about.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--ink); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--ink); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.borderColor='var(--red)';" onmouseout="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';">ABOUT</a>
+        <a href="Hannah%20Nguyen%20-%20Instructional%20Designer%20Resume%20(2026).pdf" target="_blank" download style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--ink); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--ink); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.borderColor='var(--red)';" onmouseout="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';">RESUME</a>
+        <a href="contact.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--red); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--red); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';" onmouseout="this.style.background='var(--red)'; this.style.borderColor='var(--red)';">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top" style="padding: 32px 20px 40px 20px; background-color: var(--cream);">
     <div style="max-width: 1200px; margin: 0 auto;">
 
       <!-- ===== GAME CANVAS ===== -->
       <div style="position: relative;">
-        
-        <!-- Top status bar -->
-        <div class="nav-menu">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
-              HN
-            </div>
-            <div>
-              <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">- Learning Experience Designer</span></div>
-              <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
-            </div>
-          </div>
-          <div class="nav-links">
-            <a href="about.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--ink); border: 1px solid var(--line); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--white); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.borderColor='var(--red)';" onmouseout="this.style.borderColor='var(--line)';">ABOUT</a>
-            <a href="Hannah%20Nguyen%20-%20Instructional%20Designer%20Resume%20(2026).pdf" target="_blank" download style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--ink); border: 1px solid var(--line); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--white); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.borderColor='var(--red)';" onmouseout="this.style.borderColor='var(--line)';">RESUME</a>
-            <a href="contact.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--red); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--red); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';" onmouseout="this.style.background='var(--red)'; this.style.borderColor='var(--red)';">CONTACT</a>
-          </div>
-        </div>
+
 
         <!-- ===== STAGE: portrait + menu ===== -->
         <div class="portrait-menu-grid" style="display: grid; grid-template-columns: 280px 1fr; gap: 40px; margin-bottom: 32px;">
@@ -40,17 +43,17 @@
           <div class="portrait-sticky" style="position: sticky; top: 40px; align-self: start;">
             <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 0; overflow: hidden; box-shadow: 0 4px 15px rgba(23, 32, 51, 0.05);">
               <!-- Portrait area -->
-              <div style="background: var(--sand); height: 220px; display: flex; align-items: center; justify-content: center; position: relative; border-bottom: 1px solid var(--line);">
-                <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--red); display: flex; align-items: center; justify-content: center; border: 4px solid var(--gold);">
-                  <span class="serif" style="font-style: italic; font-size: 54px; color: var(--white); font-weight: 400;">H</span>
+              <div style="background: var(--ink); height: 220px; display: flex; align-items: center; justify-content: center; position: relative; border-bottom: 1px solid var(--line);">
+                <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--white); display: flex; align-items: center; justify-content: center; border: 4px solid var(--red);">
+                  <span class="serif" style="font-size: 54px; color: var(--ink); font-weight: 900;">H</span>
                 </div>
-                <div style="position: absolute; top: 12px; left: 12px; font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--muted); font-weight: bold;">PLAYER 1</div>
-                <div style="position: absolute; bottom: 12px; right: 12px; font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); background: var(--cream); padding: 2px 6px; border-radius: 3px; font-weight: bold;">LV.<span class="player-level-value">00</span></div>
+                <div style="position: absolute; top: 12px; left: 12px; font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--white); font-weight: bold;">PLAYER 1</div>
+                <div style="position: absolute; bottom: 12px; right: 12px; font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); background: var(--white); padding: 2px 6px; border-radius: 3px; font-weight: bold;">LV.<span class="player-level-value">00</span></div>
               </div>
               <!-- Stats -->
               <div style="padding: 20px;">
                 <div class="serif" style="font-style: italic; font-size: 26px; color: var(--ink); margin-bottom: 4px;">Hannah</div>
-                <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 20px; font-weight: bold;">CLASS · LXD MAGE</div>
+                <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--red); margin-bottom: 20px; font-weight: bold;">CLASS · LXD MAGE</div>
 
                 <!-- Stat bars -->
                 <div style="margin-bottom: 14px;">
@@ -58,7 +61,7 @@
                     <span>TECHNICAL DEVELOPMENT</span><span>92</span>
                   </div>
                   <div style="height: 6px; background: var(--sand); border-radius: 3px; overflow: hidden;">
-                    <div style="width: 92%; height: 100%; background: var(--gold);"></div>
+                    <div style="width: 92%; height: 100%; background: var(--red);"></div>
                   </div>
                 </div>
                 <div style="margin-bottom: 14px;">
@@ -66,7 +69,7 @@
                     <span>UI / UX</span><span>88</span>
                   </div>
                   <div style="height: 6px; background: var(--sand); border-radius: 3px; overflow: hidden;">
-                    <div style="width: 88%; height: 100%; background: var(--gold);"></div>
+                    <div style="width: 88%; height: 100%; background: var(--red);"></div>
                   </div>
                 </div>
                 <div style="margin-bottom: 14px;">
@@ -74,7 +77,7 @@
                     <span>ASSESSMENT</span><span>90</span>
                   </div>
                   <div style="height: 6px; background: var(--sand); border-radius: 3px; overflow: hidden;">
-                    <div style="width: 90%; height: 100%; background: var(--gold);"></div>
+                    <div style="width: 90%; height: 100%; background: var(--red);"></div>
                   </div>
                 </div>
                 <div>
@@ -82,7 +85,7 @@
                     <span>AI WORKFLOW INTEGRATION</span><span>85</span>
                   </div>
                   <div style="height: 6px; background: var(--sand); border-radius: 3px; overflow: hidden;">
-                    <div style="width: 85%; height: 100%; background: var(--gold);"></div>
+                    <div style="width: 85%; height: 100%; background: var(--red);"></div>
                   </div>
                 </div>
               </div>
@@ -90,7 +93,7 @@
 
             <!-- Quest log -->
             <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-top: 16px; box-shadow: 0 4px 15px rgba(23, 32, 51, 0.05);">
-              <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 12px; font-weight: bold;">◆ ACTIVE QUEST</div>
+              <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--red); margin-bottom: 12px; font-weight: bold;">◆ ACTIVE QUEST</div>
               
               <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px;">
                 <input type="checkbox" onclick="return false;" style="margin-top: 4px; accent-color: var(--red); transform: scale(1.1); cursor: default;">
@@ -106,17 +109,17 @@
 
           <!-- RIGHT: Project Select Menu (Scrollable) -->
           <div style="padding-right: 12px; padding-left: 2px;" class="jrpg-menu">
-            <div style="font-family: monospace; font-size: 12px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 16px; font-weight: bold;">◇ MAIN QUESTS</div>
+            <div style="font-family: monospace; font-size: 12px; letter-spacing: 0.2em; color: var(--red); margin-bottom: 16px; font-weight: bold;">◇ MAIN QUESTS</div>
 
             <!-- Menu Item 1 - Sino Studio (FEATURED) -->
             <a href="animator-onboarding.html" class="jrpg-item-special" style="display: block; text-decoration: none; background: var(--red); border: 1px solid var(--red); border-radius: 8px; padding: 18px 24px; margin-bottom: 12px; position: relative; box-shadow: 0 6px 16px rgba(154, 51, 36, 0.2); transition: transform 0.2s;">
               <div style="display: flex; align-items: center; gap: 16px;">
-                <div class="serif" style="font-style: italic; font-size: 30px; color: var(--gold); line-height: 1;">▸</div>
+                <div class="serif" style="font-style: italic; font-size: 30px; color: var(--white); line-height: 1;">▸</div>
                 <div style="flex: 1;">
                   <div class="serif" style="font-size: 20px; color: var(--white); line-height: 1.2; margin-bottom: 4px;">Animator Onboarding Program</div>
                   <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: rgba(255,255,255,0.7);"> SINO STUDIO · LXD · 2025</div>
                 </div>
-                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--ink); background: var(--gold); padding: 4px 10px; border-radius: 4px; font-weight: bold;">FEATURED</div>
+                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--ink); background: var(--white); padding: 4px 10px; border-radius: 4px; font-weight: bold;">FEATURED</div>
               </div>
             </a>
 
@@ -129,15 +132,16 @@
               </div>
               <div style="font-family: monospace; font-size: 11px; color: var(--muted); font-weight: bold;">LV.4</div>
             </a>
-            <div style="font-family: monospace; font-size: 12px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 16px; font-weight: bold;">◇ SIDE QUESTS</div>
+            <div style="font-family: monospace; font-size: 12px; letter-spacing: 0.2em; color: var(--red); margin-bottom: 16px; font-weight: bold;">◇ SIDE QUESTS</div>
 
             <!-- Side Quest 1 - Amharic -->
-            <a href="#" style="display: block; text-decoration: none; background: var(--white); border: 1px dashed var(--muted); border-radius: 8px; padding: 18px 24px; margin-bottom: 12px; display: flex; align-items: center; gap: 16px; transition: transform 0.2s, border-color 0.2s;" class="jrpg-item">
+            <a href="amharic-language.html" style="display: block; text-decoration: none; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 18px 24px; margin-bottom: 12px; display: flex; align-items: center; gap: 16px; transition: transform 0.2s, border-color 0.2s; box-shadow: 0 4px 15px rgba(23, 32, 51, 0.03);" class="jrpg-item">
               <div class="serif" style="font-size: 30px; color: var(--muted); line-height: 1;">·</div>
               <div style="flex: 1;">
-                <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2; margin-bottom: 4px;">Learn Amharic Language</div>
-                <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--muted);">AMHARICJOY.COM · LIVE</div>
+                <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2; margin-bottom: 4px;">Amharic Joy Platform</div>
+                <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--muted);">AMHARICJOY.COM · LXD · LIVE</div>
               </div>
+              <div style="font-family: monospace; font-size: 11px; color: var(--muted); font-weight: bold;">LV.5</div>
             </a>
 
             <!-- Side Quest 2 - Skill Wiki -->
@@ -158,40 +162,48 @@
             </a>
 
             <!-- Achievement Box 1 -->
-            <div style="background: var(--sand); border: 1px solid var(--gold); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px;">
-              <div style="width: 48px; height: 48px; background: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 10px rgba(185, 149, 82, 0.2); flex-shrink: 0;">🎓</div>
+            <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(46, 53, 50, 0.05);">
+              <div style="width: 48px; height: 48px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165, 63, 43, 0.2); flex-shrink: 0;">
+                <i class="ti ti-school" style="font-size: 24px; color: var(--white);" aria-hidden="true"></i>
+              </div>
               <div style="flex: 1;">
-                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
+                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
                 <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">M.A in Instructional Design and Learning Technologies</div>
               </div>
             </div>
 
             <!-- Achievement Box 2 -->
-            <div style="background: var(--sand); border: 1px solid var(--gold); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px;">
-              <div style="width: 48px; height: 48px; background: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 10px rgba(185, 149, 82, 0.2); flex-shrink: 0;">📜</div>
+            <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(46, 53, 50, 0.05);">
+              <div style="width: 48px; height: 48px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165, 63, 43, 0.2); flex-shrink: 0;">
+                <i class="ti ti-certificate" style="font-size: 24px; color: var(--white);" aria-hidden="true"></i>
+              </div>
               <div style="flex: 1;">
-                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
+                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
                 <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">B.A in Psychology</div>
               </div>
             </div>
 
             <!-- Achievement Box 3 -->
-            <div style="background: var(--sand); border: 1px solid var(--gold); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px;">
-              <div style="width: 48px; height: 48px; background: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 10px rgba(185, 149, 82, 0.2); flex-shrink: 0;">🏆</div>
+            <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(46, 53, 50, 0.05);">
+              <div style="width: 48px; height: 48px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165, 63, 43, 0.2); flex-shrink: 0;">
+                <i class="ti ti-trophy" style="font-size: 24px; color: var(--white);" aria-hidden="true"></i>
+              </div>
               <div style="flex: 1;">
-                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
+                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
                 <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2; margin-bottom: 8px;">IBM AI Developer Certificate</div>
-                <a href="Hannah%20Nguyen%20-%20IBM%20AI%20Developer%20Certificate.pdf" target="_blank" style="display: inline-block; font-family: monospace; font-size: 10px; color: var(--red); border: 1px solid var(--red); padding: 4px 8px; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.color='var(--white)';" onmouseout="this.style.background='transparent'; this.style.color='var(--red)';">VIEW CERTIFICATE ›</a>
+                <a href="Hannah%20Nguyen%20-%20IBM%20AI%20Developer%20Certificate.pdf" target="_blank" style="display: inline-block; font-family: monospace; font-size: 10px; color: var(--red); border: 1px solid var(--red); background: rgba(165,63,43,0.05); padding: 4px 8px; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.color='var(--white)';" onmouseout="this.style.background='rgba(165,63,43,0.05)'; this.style.color='var(--red)';">VIEW CERTIFICATE ›</a>
               </div>
             </div>
 
             <!-- Achievement Box 4 -->
-            <div style="background: var(--sand); border: 1px solid var(--gold); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px;">
-              <div style="width: 48px; height: 48px; background: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 10px rgba(185, 149, 82, 0.2); flex-shrink: 0;">🏅</div>
+            <div style="background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(46, 53, 50, 0.05);">
+              <div style="width: 48px; height: 48px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165, 63, 43, 0.2); flex-shrink: 0;">
+                <i class="ti ti-medal" style="font-size: 24px; color: var(--white);" aria-hidden="true"></i>
+              </div>
               <div style="flex: 1;">
-                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--gold); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
+                <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-bottom: 4px;">ACHIEVEMENT UNLOCKED</div>
                 <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2; margin-bottom: 8px;">UPenn AI in Education Certificate</div>
-                <a href="Hannah%20Nguyen%20-%20AI%20In%20Education%20Certificate.pdf" target="_blank" style="display: inline-block; font-family: monospace; font-size: 10px; color: var(--red); border: 1px solid var(--red); padding: 4px 8px; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.color='var(--white)';" onmouseout="this.style.background='transparent'; this.style.color='var(--red)';">VIEW CERTIFICATE ›</a>
+                <a href="Hannah%20Nguyen%20-%20AI%20In%20Education%20Certificate.pdf" target="_blank" style="display: inline-block; font-family: monospace; font-size: 10px; color: var(--red); border: 1px solid var(--red); background: rgba(165,63,43,0.05); padding: 4px 8px; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.color='var(--white)';" onmouseout="this.style.background='rgba(165,63,43,0.05)'; this.style.color='var(--red)';">VIEW CERTIFICATE ›</a>
               </div>
             </div>
 
@@ -205,12 +217,7 @@
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
             <div>
               <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); margin-bottom: 8px;">♦ ENCOUNTERS</div>
-              <div class="serif" style="font-size: 38px; color: var(--ink); line-height: 1.1;">People I've met along<br><span style="color: var(--red);">the journey.</span></div>
-            </div>
-            <div style="background: var(--sand); border: 1px solid var(--line); border-radius: 6px; padding: 14px 18px; text-align: right;">
-              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--red); margin-bottom: 6px;">♦ FACTION REPUTATION</div>
-              <div class="serif" style="font-size: 15px; color: var(--ink); margin-bottom: 4px;">Across 3 studios &amp; 10+ collaborators</div>
-              <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--gold);">TRUSTED ALLY</div>
+              <div class="jrpg-h1">People I've met along<br><span style="color: var(--red);">the journey.</span></div>
             </div>
           </div>
 
@@ -221,15 +228,15 @@
             <div class="jrpg-card-white">
               <!-- Card header -->
               <div class="npc-card-header">
-                <div class="avatar avatar-md" style="background: var(--red);">
-                  <span class="serif" style="font-size: 20px; color: var(--cream); font-weight: 800;">M</span>
+                <div class="avatar avatar-md" style="background: var(--ink);">
+                  <span class="serif" style="font-size: 20px; color: var(--white); font-weight: 800;">M</span>
                 </div>
                 <div style="flex: 1;">
                   <div style="font-family: monospace; font-size: 8px; letter-spacing: 0.15em; color: var(--muted); line-height: 1.6;">STUDIO DIRECTOR</div>
                   <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.1;">Minh T.</div>
                   <div style="font-family: monospace; font-size: 9px; color: var(--muted);">Sino Studio</div>
                 </div>
-                <div style="font-family: monospace; font-size: 8px; letter-spacing: 0.1em; color: var(--gold);">RANK MAX</div>
+                <div style="font-family: monospace; font-size: 8px; letter-spacing: 0.1em; color: var(--red);">RANK MAX</div>
               </div>
               <!-- Speaker tag -->
               <!-- Quote -->
@@ -246,8 +253,8 @@
             <!-- Card 2 - Abemelech B. -->
             <div class="jrpg-card-white">
               <div class="npc-card-header">
-                <div class="avatar avatar-md" style="background: var(--gold);">
-                  <span class="serif" style="font-size: 20px; color: var(--ink); font-weight: 800;">A</span>
+                <div class="avatar avatar-md" style="background: var(--ink);">
+                  <span class="serif" style="font-size: 20px; color: var(--white); font-weight: 800;">A</span>
                 </div>
                 <div style="flex: 1;">
                   <div style="font-family: monospace; font-size: 8px; letter-spacing: 0.15em; color: var(--muted); line-height: 1.6;">SOFTWARE ENGINEER</div>
@@ -269,14 +276,14 @@
             <div class="jrpg-card-white">
               <div class="npc-card-header">
                 <div class="avatar avatar-md" style="background: var(--ink);">
-                  <span class="serif" style="font-size: 20px; color: var(--cream); font-weight: 800;">L</span>
+                  <span class="serif" style="font-size: 20px; color: var(--white); font-weight: 800;">L</span>
                 </div>
                 <div style="flex: 1;">
                   <div style="font-family: monospace; font-size: 8px; letter-spacing: 0.15em; color: var(--muted); line-height: 1.6;">LXD MENTOR</div>
                   <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.1;">Linh P.</div>
                   <div style="font-family: monospace; font-size: 9px; color: var(--muted);">IDOL Academy</div>
                 </div>
-                <div style="font-family: monospace; font-size: 8px; letter-spacing: 0.1em; color: var(--gold);">RANK MAX</div>
+                <div style="font-family: monospace; font-size: 8px; letter-spacing: 0.1em; color: var(--red);">RANK MAX</div>
               </div>
               <div class="npc-card-quote">
                 "Hannah's storyboards read like a script written by someone who genuinely respects the learner. The Ren'Py choice was bold and it worked - that's not luck, that's craft."
