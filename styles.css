@@ -1184,6 +1184,69 @@
       gap: 10px;
     }
 
+    /* --- Responsive Utilities --- */
+    .jrpg-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    
+    .jrpg-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .jrpg-flex-responsive {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    /* --- End screen options --- */
+    .end-options {
+      display: flex;
+      gap: 8px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .end-btn-filled {
+      flex: 1;
+      font-family: monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #ffffff !important;
+      background: var(--ink);
+      padding: 10px;
+      border-radius: 3px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      transition: all 0.2s;
+    }
+    .end-btn-filled:hover {
+      background: var(--red);
+    }
+    .end-btn-outline {
+      flex: 1;
+      font-family: monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: var(--ink) !important;
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 10px;
+      border-radius: 3px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      transition: all 0.2s;
+    }
+    .end-btn-outline:hover {
+      border-color: var(--red);
+      color: var(--red) !important;
+    }
+
     /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
 
     @media (max-width: 900px) {
@@ -1224,9 +1287,20 @@
       .reward-grid,
       .testimonial-grid,
       .portrait-menu-grid,
-      .footer-grid {
+      .footer-grid,
+      .jrpg-grid-2,
+      .jrpg-grid-3 {
         grid-template-columns: 1fr !important;
         gap: 16px !important;
+      }
+
+      .jrpg-flex-responsive {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 16px !important;
+      }
+      .jrpg-flex-responsive > div {
+        min-width: 0 !important;
       }
 
       .nav-menu {

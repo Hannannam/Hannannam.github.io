@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Wiki: Filling the Gap | Hannah (Ngoc) Nguyen</title>
+  <meta name="description" content="Case study: Góc Kỹ Năng (Skill Wiki) - A community-driven platform for practical life skills." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <style>
+    /* Case study specific styles */
+    .case-content h3 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      font-size: clamp(22px, 4vw, 26px);
+      color: var(--red);
+    }
+    .case-content strong {
+      font-weight: 600;
+      color: var(--red);
+    }
+  </style>
+</head>
+<body style="background-color: var(--cream);">
+  <div class="nav-ribbon">
+    <div class="nav-menu">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="width: 32px; height: 32px; background: var(--red); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold;">
+          HN
+        </div>
+        <div>
+          <div class="serif" style="font-size: 20px; color: var(--ink); line-height: 1.2;"><b>Hannah Nguyen</b> <span style="color: var(--muted);">- Learning Experience Designer</span></div>
+          <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--ink); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--ink); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.borderColor='var(--red)';" onmouseout="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';">BACK TO MENU</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top" style="padding: 32px 20px 40px 20px; background-color: var(--cream);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <!-- ===== CHAPTER TITLE CARD ===== -->
+    <div class="chapter-header">
+      <div>
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); margin-bottom: 6px;">◇ CHAPTER 04</div>
+        <div class="jrpg-h1" style="margin-bottom: 8px;">Skill Wiki: Filling the <em style="color: var(--red);">Practical Void.</em></div>
+      </div>
+      <!-- Project meta card -->
+      <div style="background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-family: monospace; font-size: 10px;">
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">DIFFICULTY</div>
+            <div style="color: var(--red); margin-top: 2px;">★★★★★</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">PARTY SIZE</div>
+            <div style="color: var(--ink); margin-top: 2px;">Solo Developer</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">DURATION</div>
+            <div style="color: var(--ink); margin-top: 2px;">Ongoing</div>
+          </div>
+          <div>
+            <div style="color: var(--muted); letter-spacing: 0.1em;">STATUS</div>
+            <div style="color: #c45959; margin-top: 2px;">● Live Build</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== MISSION BRIEFING (THE GAP) ===== -->
+    <div style="background: #ffffff; border: 2px solid var(--red); border-radius: 6px; padding: 22px 24px; margin-bottom: 22px; position: relative;">
+      <div style="position: absolute; top: -12px; left: 18px; background: var(--red); color: var(--cream); font-family: monospace; font-size: 11px; letter-spacing: 0.15em; padding: 3px 12px; border-radius: 3px;">▸ MISSION BRIEFING - THE PROBLEM</div>
+
+      <div class="jrpg-p-lg" style="margin-top: 6px; margin-bottom: 14px;">
+        Practical life skills are the <em style="color: var(--red);">missing foundation</em> in traditional education.
+      </div>
+      <div class="jrpg-body">
+        Many learners find themselves with academic knowledge but struggle with the practicalities of modern life—from financial literacy to sustainable habits. Information online is often fragmented, biased, or disconnected from the local Vietnamese context. I started to bridge this "Practical Void" by creating a centralized, reliable repository for actionable intelligence.
+      </div>
+
+      <!-- Enemy debuffs -->
+      <div style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(46,53,50,0.2);">
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--red); margin-bottom: 10px;">⚠ THE "FRAGMENTATION" DEBUFF</div>
+        <div class="debuffs-grid">
+          <div class="debuff-card">
+            <i class="ti ti-unlink" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 01</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Scattered & unverified online advice.</div>
+            </div>
+          </div>
+          <div class="debuff-card">
+            <div style="width: 20px; height: 20px; color: var(--red); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+              <i class="ti ti-book-off" style="font-size: 20px;"></i>
+            </div>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 02</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Theoretical focus over practical application.</div>
+            </div>
+          </div>
+          <div class="debuff-card">
+            <i class="ti ti-map-off" style="font-size: 20px; color: var(--red); margin-top: 2px;" aria-hidden="true"></i>
+            <div>
+              <div style="font-family: monospace; font-size: 9px; letter-spacing: 0.15em; color: var(--red);">DEBUFF · 03</div>
+              <div class="serif" style="font-size: 15px; color: var(--ink); line-height: 1.3; margin-top: 2px;">Content mismatched to local context.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STRATEGY PANEL (THE MISSION) ===== -->
+    <div class="jrpg-card">
+      <div class="jrpg-header-row">
+        <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--red);">◆ STRATEGY - THE MISSION</div>
+        <div style="font-family: monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em;">A WIKI FOR THE FUTURE</div>
+      </div>
+
+      <div class="serif" style="font-size: 26px; line-height: 1.35; color: var(--ink); margin-bottom: 14px;">
+        Building a <em style="color: var(--red);">Practical Skill Library</em> - free, deep, and designed for self-improvement.
+      </div>
+      <div class="jrpg-body" style="margin-bottom: 24px;">
+        Skill Wiki was born to fill the gap between school and life. My approach is purely action-oriented: clear, step-by-step guides that are ready to apply. Beyond just "How-To," each article includes a <strong>"Thought Corner" (Góc Tư Duy)</strong> to help learners understand the underlying principles, enabling them to act not just effectively, but intelligently and autonomously.
+      </div>
+
+      <div style="margin-bottom: 32px;">
+        <a href="https://goc-ky-nang.vercel.app/" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-family: monospace; font-size: 13px; font-weight: bold; box-shadow: 0 6px 20px rgba(165,63,43,0.3); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(165,63,43,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(165,63,43,0.3)';">
+          <i class="ti ti-external-link" style="font-size: 18px;"></i> TRY SKILL WIKI OUT YOURSELF
+        </a>
+      </div>
+
+      <!-- Core Beliefs -->
+      <div class="buffs-section">
+        <div class="jrpg-label-sm" style="margin-bottom: 10px; color: var(--red);">✦ CORE BELIEFS (PASSIVE BUFFS)</div>
+        <div class="buffs-grid">
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-brain" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Critical Thinking</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-world" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Future Stewardship</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-chart-line" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">Income Bridge</div>
+          </div>
+          <div class="buff-row">
+            <div class="buff-icon">
+              <i class="ti ti-flag" style="font-size: 16px; color: var(--white);" aria-hidden="true"></i>
+            </div>
+            <div class="jrpg-mono">National Prosperity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DEVELOPMENT GEAR (TECH STACK) ===== -->
+    <div style="margin-bottom: 48px;">
+      <div class="jrpg-header-row" style="margin-bottom: 24px;">
+        <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.25em; color: var(--red); font-weight: bold;">◇ DEVELOPMENT GEAR</div>
+        <div style="font-family: monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.1em;">PLATFORM STABILITY</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <!-- Tool 1: Sanity -->
+        <div class="jrpg-card-white" style="display: grid; grid-template-columns: 400px 1fr; gap: 32px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; align-items: center;">
+          <div style="background: #fff; border-radius: 6px; padding: 20px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; height: 250px; overflow: hidden;">
+            <img src="images/sanity.png" alt="Sanity CMS" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 8px;">EQUIPMENT 01 · CONTENT ARCHITECTURE</div>
+            <h4 class="serif" style="font-size: 24px; color: var(--ink); margin-bottom: 12px;">Sanity CMS</h4>
+            <div class="jrpg-body" style="font-size: 15px; line-height: 1.6;">
+              Ensuring a scalable and consistent content structure across the entire platform. Sanity allows me to rapidly deploy new skill guides while maintaining a unified pedagogical framework.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool 2: Vercel -->
+        <div class="jrpg-card-white" style="display: grid; grid-template-columns: 400px 1fr; gap: 32px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; align-items: center;">
+          <div style="background: #fff; border-radius: 6px; padding: 20px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; height: 250px; overflow: hidden;">
+            <img src="vercel.png" alt="Vercel Hosting" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 8px;">EQUIPMENT 02 · HOSTING INFRASTRUCTURE</div>
+            <h4 class="serif" style="font-size: 24px; color: var(--ink); margin-bottom: 12px;">Vercel</h4>
+            <div class="jrpg-body" style="font-size: 15px; line-height: 1.6;">
+              High-performance hosting for a seamless and lightning-fast user experience. Vercel handles my global distribution, ensuring that knowledge is accessible to anyone, anywhere, instantly.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool 3: Antigravity -->
+        <div class="jrpg-card-white" style="display: grid; grid-template-columns: 400px 1fr; gap: 32px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; align-items: center;">
+          <div style="background: #fff; border-radius: 6px; padding: 20px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; height: 250px; overflow: hidden;">
+            <img src="images/antigravity.png" alt="Antigravity AI" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 8px;">EQUIPMENT 03 · DEVELOPMENT OPTIMIZATION</div>
+            <h4 class="serif" style="font-size: 24px; color: var(--ink); margin-bottom: 12px;">Antigravity AI</h4>
+            <div class="jrpg-body" style="font-size: 15px; line-height: 1.6;">
+              Optimized development workflow through advanced AI-assisted coding. Antigravity acts as my technical companion, helping me write clean, efficient code and solve complex architectural challenges.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool 4: Canva -->
+        <div class="jrpg-card-white" style="display: grid; grid-template-columns: 400px 1fr; gap: 32px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; align-items: center;">
+          <div style="background: #fff; border-radius: 6px; padding: 20px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; height: 250px; overflow: hidden;">
+            <img src="images/canva gockynang.jpeg" alt="Canva Design" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 8px;">EQUIPMENT 04 · VISUAL COMMUNICATIONS</div>
+            <h4 class="serif" style="font-size: 24px; color: var(--ink); margin-bottom: 12px;">Canva</h4>
+            <div class="jrpg-body" style="font-size: 15px; line-height: 1.6;">
+              Crafting professional illustrations and high-impact cover art. Canva empowers me to create a visually consistent and engaging brand identity that resonates with my learners.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool 5: Claude -->
+        <div class="jrpg-card-white" style="display: grid; grid-template-columns: 400px 1fr; gap: 32px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; align-items: center;">
+          <div style="background: #fff; border-radius: 6px; padding: 20px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; height: 250px; overflow: hidden;">
+            <img src="images/claude.png" alt="Claude AI" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+          </div>
+          <div>
+            <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 8px;">EQUIPMENT 05 · CONCEPTUAL ARCHITECTURE</div>
+            <h4 class="serif" style="font-size: 24px; color: var(--ink); margin-bottom: 12px;">Claude</h4>
+            <div class="jrpg-body" style="font-size: 15px; line-height: 1.6;">
+              Generating the initial ideas for articles and designing the first-look of interactives. Claude helps me create tools that allow learners to immediately apply their knowledge in practical, high-fidelity scenarios.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SYSTEM FACILITIES (PLATFORM FEATURES) ===== -->
+    <div style="margin-bottom: 64px;">
+      <div class="jrpg-header-row" style="margin-bottom: 24px;">
+        <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.25em; color: var(--red); font-weight: bold;">◇ SYSTEM FACILITIES</div>
+        <div style="font-family: monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.1em;">PLATFORM MECHANICS</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 40px;">
+        
+        <!-- Facility 01: Intelligent Discovery -->
+        <div class="jrpg-card-white" style="padding: 32px; border: 1px solid var(--line); border-radius: 8px;">
+          <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 12px;">FACILITY 01 · INTELLIGENT DISCOVERY</div>
+          <h3 class="serif" style="font-size: 28px; color: var(--ink); margin-bottom: 16px; margin-top: 0;">Find Exactly What You Need</h3>
+          <div class="jrpg-body" style="font-size: 16px; margin-bottom: 24px;">
+            I implemented a robust <strong>search bar</strong> that allows learners to filter by name or specific tags, ensuring that the right knowledge is always just a few keystrokes away. Each article card is a data-rich preview, showing the <strong>topic, synopsis, difficulty level, and estimated read time</strong> at a glance.
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="background: #fff; border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+              <img src="images/search.png" alt="Search and Discovery Interface" style="width: 100%; border-radius: 4px;">
+              <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: var(--muted); text-align: center;">Search engine optimized for rapid skill discovery.</div>
+            </div>
+            <div style="background: #fff; border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+              <img src="images/articles.png" alt="Article Grid with Canva Icons" style="width: 100%; border-radius: 4px;">
+              <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: var(--muted); text-align: center;">Flat-illustration icons created in Canva for visual consistency.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facility 02: Standardized Pedagogy -->
+        <div class="jrpg-card-white" style="padding: 32px; border: 1px solid var(--line); border-radius: 8px;">
+          <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 12px;">FACILITY 02 · STANDARDIZED PEDAGOGY</div>
+          <h3 class="serif" style="font-size: 28px; color: var(--ink); margin-bottom: 16px; margin-top: 0;">Defeating "Vibe Coding" Inconsistency</h3>
+          <div class="jrpg-body" style="font-size: 16px; margin-bottom: 24px;">
+            By using <strong>Sanity CMS</strong>, I've enforced a rigid, high-quality format for every article. This solves the problem of inconsistent styling, ensuring learners always know exactly what to expect: from the initial "Why" to the final Mission Challenge.
+          </div>
+
+          <div style="background: #fff; border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 24px;">
+            <img src="images/article.png" alt="Structured Article View" style="width: 100%; border-radius: 4px;">
+            <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: var(--muted); text-align: center;">✦ CORE STRUCTURE: Consistent sections including "Why Learn", "Steps", and "Critical Thinking".</div>
+          </div>
+
+          <div class="jrpg-grid-2">
+            <div style="background: var(--cream); border-radius: 8px; padding: 20px; border: 1px dashed var(--red);">
+              <div style="font-family: monospace; font-size: 11px; color: var(--red); font-weight: bold; margin-bottom: 8px;">✦ THE ARTICLE SIDEBAR</div>
+              <div class="jrpg-body" style="font-size: 14px;">
+                Includes article ratings and core metadata, providing social proof and reliable trust factors for every learner.
+              </div>
+            </div>
+            <div style="background: var(--cream); border-radius: 8px; padding: 20px; border: 1px dashed var(--red);">
+              <div style="font-family: monospace; font-size: 11px; color: var(--red); font-weight: bold; margin-bottom: 8px;">✦ SUCCESS STORIES</div>
+              <div class="jrpg-body" style="font-size: 14px;">
+                Real-world feedback from learners who have put the knowledge into practice, closing the loop on impact.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facility 03: Immediate Mastery -->
+        <div class="jrpg-card-white" style="padding: 32px; border: 1px solid var(--line); border-radius: 8px;">
+          <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 12px;">FACILITY 03 · IMMEDIATE MASTERY</div>
+          <h3 class="serif" style="font-size: 28px; color: var(--ink); margin-bottom: 16px; margin-top: 0;">Actionable Knowledge Assets</h3>
+          <div class="jrpg-body" style="font-size: 16px; margin-bottom: 24px;">
+            The core goal of Góc Kỹ Năng is for learners to <strong>immediately put their knowledge to practice</strong>. Using Claude for initial logic and Antigravity for refinement, I create sustainable interactive tools that make the learning journey actionable.
+          </div>
+
+          <div style="background: #fff; border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <img src="images/tools.png" alt="Interactive Application Tools Interface" style="width: 100%; border-radius: 4px;">
+            <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: var(--muted); text-align: center;">Sustainable tools built to bridge the gap between theory and practice.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== COMMUNITY CONTRIBUTIONS ===== -->
+    <div class="jrpg-card-white" style="padding: 32px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 64px;">
+      <div style="font-family: monospace; font-size: 12px; color: var(--red); font-weight: bold; margin-bottom: 12px;">✦ COMMUNITY INPUT</div>
+      <h3 class="serif" style="font-size: 28px; color: var(--ink); margin-bottom: 16px; margin-top: 0;">Evolving Through Collaboration</h3>
+      <div class="jrpg-body" style="font-size: 16px; margin-bottom: 24px;">
+        Anyone can propose new skills or provide feedback on existing content through my official contribution form. Your insights are the engine that drives Góc Kỹ Năng forward, ensuring the platform stays relevant to the community's needs.
+      </div>
+
+      <div style="background: #fff; border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <img src="images/feedback.png" alt="Community Feedback Form" style="width: 100%; border-radius: 4px;">
+        <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: var(--muted); text-align: center;">Open communication channels for continuous platform improvement and skill requests.</div>
+      </div>
+    </div>
+
+    <!-- ===== VICTORY SCREEN (PLATFORM IMPACT) ===== -->
+    <div class="jrpg-card-ink" style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-left: 8px solid; border-image: linear-gradient(to bottom, var(--red), var(--red-deep)) 1; color: var(--ink); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; position: relative;">
+        <div style="width: 36px; height: 36px; background: #fff; border: 1.5px solid rgba(165,63,43,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165,63,43,0.1);">
+          <i class="ti ti-sparkles" style="font-size: 20px; color: var(--red);" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div style="font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: var(--red); font-weight: bold;">★ ★ ★ LEGENDARY LOOT ★ ★ ★</div>
+          <div class="jrpg-h2" style="margin-top: 2px;">Skill Wiki Hub - <em style="color: #666;">Impact Analysis</em></div>
+        </div>
+      </div>
+
+      <div class="jrpg-p-lg" style="margin-bottom: 18px; max-width: 720px; position: relative;">
+        A sustainable arsenal of practical knowledge, designed to scale with the community's needs.
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="jrpg-grid-2" style="margin-bottom: 24px; position: relative;">
+        
+        <!-- Feature 1: Templates -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-template" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Scalable Templates</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Sanity CMS powered structures for consistent, rapid content deployment.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Methodology -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-brain" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Deep Pedagogy</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Beyond the "How" to the "Why" through integrated "Thought Corner" sections.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Community -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-users" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Open Feedback</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Integrated community hiến kế (suggestions) for democratized learning.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4: Performance -->
+        <div style="background: #fcfcfc; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 16px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--red);"></div>
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="width: 32px; height: 32px; background: #fff; border: 1px solid rgba(165,63,43,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="ti ti-rocket" style="font-size: 18px; color: var(--red);"></i>
+            </div>
+            <div>
+              <div class="serif" style="font-size: 16px; color: var(--ink); line-height: 1.2;">Optimized Core</div>
+              <div style="font-family: monospace; font-size: 9px; color: #555; margin-top: 6px; line-height: 1.4;">Hosted on Vercel with AI-optimized codebase for 100% lighthouse performance.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div class="xp-badge" style="color: var(--white); font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.1); background: var(--red); padding: 4px 12px; border-radius: 4px; font-size: 11px;">+800 XP · BOSS DEFEATED</div>
+        <div class="xp-badge" style="color: var(--white); font-weight: bold; background: var(--ink); padding: 4px 12px; border-radius: 4px; font-size: 11px;">+800 XP · PROJECT LIVE</div>
+      </div>
+
+      <!-- XP bar -->
+      <div style="position: relative; margin-bottom: 18px;">
+        <div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 10px; color: var(--red); margin-bottom: 6px; letter-spacing: 0.1em; font-weight: bold;">
+          <span>★ TOTAL XP EARNED</span><span style="color: var(--red);">1,600 / 1,600</span>
+        </div>
+        <div style="height: 4px; background: rgba(165,63,43,0.05); border-radius: 2px; overflow: hidden;">
+          <div style="width: 100%; height: 100%; background: linear-gradient(to right, var(--red), var(--red-deep)); box-shadow: 0 0 10px rgba(165,63,43,0.2);"></div>
+        </div>
+      </div>
+
+      <!-- End screen options -->
+      <div class="end-options">
+        <a href="about.html" class="end-btn-filled">▸ ABOUT PLAYER</a>
+        <a href="skill-wiki.html" class="end-btn-outline">↻ REPLAY</a>
+        <a href="index.html" class="end-btn-outline">⌂ MAIN MENU</a>
+      </div>
+    </div>
+
+  </div>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="serif">Let’s create learning that makes an impact.</h2>
+        <p>I’m open to instructional design opportunities, eLearning projects, and collaborations.</p>
+      </div>
+      <div class="contact-list">
+        <a class="contact-item" href="https://www.linkedin.com/in/anh-ngoc-nguyen-4bb18b227/" target="_blank" rel="noreferrer"><b>LinkedIn</b><span>linkedin.com/in/anh-ngoc-nguyen-4bb18b227/</span></a>
+        <a class="contact-item" href="mailto:nguyen.educates@gmail.com"><b>Email</b><span>nguyen.educates@gmail.com</span></a>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Hannah (Ngoc) Nguyen · Instructional Design Portfolio</div>
+  </footer>
+</body>
+</html>
