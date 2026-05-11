@@ -68,11 +68,37 @@
           <div style="font-family: monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--red); font-weight: bold; margin-top: 2px;">PORTFOLIO</div>
         </div>
       </div>
-      <div class="nav-links">
-        <a href="index.html" style="text-decoration: none; font-family: monospace; font-size: 12px; color: var(--white); border: 1px solid var(--ink); padding: 8px 16px; border-radius: 6px; cursor: pointer; background: var(--ink); font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='var(--red)'; this.style.borderColor='var(--red)';" onmouseout="this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';">BACK TO MENU</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+        <i class="ti ti-menu-2"></i>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="Hannah%20Nguyen%20-%20Instructional%20Designer%20Resume%20(2026).pdf" target="_blank" download class="nav-link">RESUME</a>
+        <a href="contact.html" class="nav-contact-btn">CONTACT</a>
       </div>
     </div>
   </div>
+
+  <script>
+    // Navigation Toggle Logic
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+      
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          const icon = menuToggle.querySelector("i");
+          if (navLinks.classList.contains("active")) {
+            icon.className = "ti ti-x";
+          } else {
+            icon.className = "ti ti-menu-2";
+          }
+          menuToggle.blur();
+        });
+      }
+    });
+  </script>
 
   <main id="top" style="padding: 32px 20px 40px 20px; background-color: var(--cream);">
   <div style="max-width: 1200px; margin: 0 auto;">
@@ -312,7 +338,7 @@
     </div>
 
     <!-- ===== VICTORY SCREEN (THE FEATURE LIST) ===== -->
-    <div class="jrpg-card-ink" style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-left: 8px solid; border-image: linear-gradient(to bottom, var(--red), var(--red-deep)) 1; color: var(--ink); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+    <div class="jrpg-card-ink victory-card">
 
       <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; position: relative;">
         <div style="width: 36px; height: 36px; background: #fff; border: 1.5px solid rgba(165,63,43,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(165,63,43,0.1);">
@@ -389,9 +415,9 @@
 
       </div>
 
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-        <div class="xp-badge" style="color: var(--white); font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.1); background: var(--red); padding: 4px 12px; border-radius: 4px; font-size: 11px;">+800 XP · BOSS DEFEATED</div>
-        <div class="xp-badge" style="color: var(--white); font-weight: bold; background: var(--ink); padding: 4px 12px; border-radius: 4px; font-size: 11px;">+800 XP · PROJECT LIVE</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+        <div class="xp-badge" style="color: var(--white); background: var(--red); text-shadow: 0 1px 2px rgba(0,0,0,0.1);">+800 XP · BOSS DEFEATED</div>
+        <div class="xp-badge" style="color: var(--white); background: var(--ink);">+800 XP · PROJECT LIVE</div>
       </div>
 
       <!-- XP bar -->
